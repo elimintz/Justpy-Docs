@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Creating Charts - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../chart_events/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../introduction/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#creating-charts" class="nav-link">Creating Charts</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#your-first-chart" class="nav-link">Your First Chart</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#chart-types" class="nav-link">Chart Types</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-highcharts-online-examples" class="nav-link">Using Highcharts Online Examples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#chart-series" class="nav-link">Chart Series</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sharing-charts" class="nav-link">Sharing Charts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="creating-charts">Creating Charts</h1>
+<h2 id="your-first-chart">Your First Chart</h2>
+<p>To begin, we'll use the Highchart's documentation <a href="https://www.highcharts.com/docs/getting-started/your-first-chart">Your First Chart</a> example. </p>
+<p>In JustPy this example would look like this:</p>
+<pre><code class="language-python">import justpy as jp
+
+# Example from https://www.highcharts.com/docs/getting-started/your-first-chart
+my_chart_def = &quot;&quot;&quot;
+{
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
+}
+&quot;&quot;&quot;
+
+def chart_test():
+    wp = jp.WebPage()
+    my_chart = jp.HighCharts(a=wp, classes='m-2 p-2 border', style='width: 600px')
+    my_chart.options = my_chart_def
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>Run the program above as explained <a href="/tutorial/getting_started">here</a>.</p>
+<p>We create a chart using the JustPy HighCharts class. Like other JustPy components, it recognizes keyword arguments like <code>classes</code>, <code>style</code> and <code>a</code>.</p>
+<p>In this example the variable <code>my_chart_def</code> defines the chart's options (settings). It is a string which can be converted directly to a valid JavaScript object. This JavaScript object is not however a valid Python dictionary because the keys of the object (for example <code>chart</code> and <code>title</code>) do not have single quotes or double quotes around them and therefore are not valid Python keys. </p>
+<p>When <code>my_chart_def</code> is assigned to <code>my_chart.options</code> the code in <code>HighCharts</code> (a Python class) checks if a string is being assigned, and if that is the case, it is converted to a <a href="https://github.com/mewwts/addict">Python dictionary that also allows dot notation</a>. </p>
+<p>If a standard Python dictionary is assigned to the <code>options</code> attribute, it is also converted to a dictionary that allows dot notation access. Don't worry if this is not completely clear at this stage. There are plenty of examples coming that will make things clearer.</p>
+<p>Try for example, changing the text of the chart title in <code>my_chart_def</code> and running the program again.</p>
+<h2 id="chart-types">Chart Types</h2>
+<p>Let's do something a little more complex. Change <code>chart_test</code> in the above example to the following:</p>
+<pre><code class="language-python">def chart_test():
+    wp = jp.WebPage()
+    for chart_type in ['bar', 'column', 'line', 'spline']:
+        my_chart = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+        my_chart.options.chart.type = chart_type
+        my_chart.options.title.text = f'Chart of Type {chart_type.capitalize()}'
+        my_chart.options.subtitle.text = f'Subtitle {chart_type.capitalize()}'
+    return wp
+</code></pre>
+<p>Four charts are created and put on the page, each one of a different type. We accomplish this by iterating over a list with four different chart types that Highcharts supports. When we create each chart, we load the same options (via a keyword argument) to all of them. </p>
+<p>!!! info
+    The reference for the Highcharts chart options can be found at https://api.highcharts.com/highcharts/</p>
+<p>However, we then proceed to change the options. Using the dot notation, we assign different values to <a href="https://api.highcharts.com/highcharts/chart.type"><code>options.chart.type</code></a>, <a href="https://api.highcharts.com/highcharts/title.text"><code>options.title.text</code></a> and <a href="https://api.highcharts.com/highcharts/subtitle.text"><code>options.subtitle.text</code></a>. </p>
+<p>!!! note
+    Notice that <code>options.subtitle</code> was not specified in <code>my_chart_def</code>. The <a href="https://github.com/mewwts/addict">addict</a> library <code>Dict</code> structure creates sub dictionaries automatically when required. </p>
+<h2 id="using-highcharts-online-examples">Using Highcharts Online Examples</h2>
+<p>There are many examples of Highcharts charts online and particularly in the Highcharts <a href="https://www.highcharts.com/docs/index">documentation</a>. The structure of the <code>options</code> attribute of HighCharts (the Python class defined by JustPy) matches exactly the structure of the JavaScript object that defines the settings of a Highchart JavaScript chart. This is very convenient and allows you to use the numerous JavaScript examples of Highcharts charts as a starting point for your own charts. </p>
+<p>The Highcharts library is a JavaScript library and the the chart examples are all in JavaScript. That is why JustPy's <code>HighCharts</code> supports converting strings that represent simple Javascript objects to Python dictionaries. Let's look at a concrete example from the Highcharts documentation.</p>
+<p>Please go to https://api.highcharts.com/highcharts/chart.type and follow the link under "Try it" labeled <a href="https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/chart/type-bar/">"Bar"</a>. In the Highcharts documentation and in other discussions of Highcharts it is common to link to a JavaScript <a href="https://jsfiddle.net">jsfiddle</a> or <a href="https://codepen.io">codepen</a> working example. In this case, a jsfiddle window opens. Look at the JavaScript window in the lower left of the page. The second argument to <code>Highcharts.chart</code> is the JavaScript object that defines the chart. Let's copy this object and assign it to a Python string and try replicating this chart.</p>
+<p>If you simply copy the object like I did  below, you will get an error. Run the program and see for yourself there is an issue.</p>
+<pre><code class="language-python">import justpy as jp
+
+my_chart_def = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'bar'
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    legend: {
+        layout: 'vertical',
+        floating: true,
+        backgroundColor: '#FFFFFF',
+        align: 'right',
+        verticalAlign: 'top',
+        y: 60,
+        x: -60
+    },
+    tooltip: {
+        formatter: function () {
+            return '&lt;b&gt;' + this.series.name + '&lt;/b&gt;&lt;br/&gt;' +
+                this.x + ': ' + this.y;
+        }
+    },
+    series: [{
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+    }]
+}
+&quot;&quot;&quot;
+
+def chart_test():
+    wp = jp.WebPage()
+    my_chart = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>The problem is that the value of the <code>tooltip.formatter</code> key is a JavaScript function definition. JustPy does not support this. We will soon see how to define tooltip formatters in JustPy, but for now, please remove the whole tooltip section and run the program. Your program should look like this:</p>
+<pre><code class="language-python">import justpy as jp
+
+my_chart_def = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'bar'
+    },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    legend: {
+        layout: 'vertical',
+        floating: true,
+        backgroundColor: '#FFFFFF',
+        align: 'right',
+        verticalAlign: 'top',
+        y: 60,
+        x: -60
+    },
+    series: [{
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+    }]
+}
+&quot;&quot;&quot;
+
+def chart_test():
+    wp = jp.WebPage()
+    my_chart = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    my_chart.options.series[0].name = 'Tourists in \'000'
+    my_chart.options.title.text = 'Tourists in Middle Earth'
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>This time, there is no error. When you copy a JavaScript object, make sure that it does not include function definitions or uses JavaScript language functions to compute values. These will cause errors. </p>
+<p>!!! warning
+    JustPy can only parse JavaScript objects that look like a Python dictionary except for the missing quotes around the dictionary keys. Also, mixing single and double quotes in the JavaScript object may cause problems. Use only single quotes as is the norm with most Highcharts examples.</p>
+<p>!!! tip
+    It is very likely someone has already created a chart like that one you need and put it online. Use that chart as a stepping stone to create yours. Eventually, you may need to make use of the excellent Highcharts <a href="https://www.highcharts.com/docs/index">docs</a></p>
+<h2 id="chart-series">Chart Series</h2>
+<p>Notice that we have added two lines to <code>chart_test</code> above.  The first of these lines gives the series a name and makes the legend more informative. </p>
+<p>!!! note
+    The Dicts that describe the series of a chart are held in a list so the first series is <code>options.series[0]</code></p>
+<p>Here is an example of how you create a chart with multiple series.</p>
+<p>!!! warning
+    numpy needs to be installed for this example to work</p>
+<pre><code class="language-python">import justpy as jp
+import numpy as np
+
+
+def sine_test():
+    wp = jp.WebPage()
+    chart = jp.HighCharts(a=wp, classes='border m-2 p-2 w-3/4')
+    o = chart.options
+    o.title.text = 'Sines Galore'
+    x = np.linspace(-np.pi, np.pi, 201)
+    for frequency in range(1,11):
+        y = np.sin(frequency * x)
+        s = jp.Dict()
+        s.name = f'F{frequency}'
+        s.data = list(zip(x, y))
+        o.series.append(s)
+    return wp
+
+
+jp.justpy(sine_test)
+</code></pre>
+<p>This example uses numpy to generate sines with different frequencies and adds them as separate series to a chart (numpy needs to be installed for this example to work).</p>
+<p>This and other examples will use the Python standard library function <code>zip</code>. Using <code>zip</code>, it is very simple to create lists of x, y pairs which is one data format Highcharts supports for its series (it supports other formats also such as dictionaries).  </p>
+<p>Try moving the mouse over different areas of the chart to see its interactive features. For example, when you hover over a series name in the legend, it highlights the series. When you click the series name in the legend, it is disabled.</p>
+<h2 id="sharing-charts">Sharing Charts</h2>
+<p>In many cases, having created a chart, you would like to share it with others. One way is to deploy JustPy and have people access the charts via a URL. </p>
+<pre><code class="language-python">import justpy as jp
+
+# https://github.com/elimintz/elimintz.github.io/tree/master/charts
+# Try https://127.0.0.1:8000/ + any one of the entries in charts
+# For example: http://127.0.0.1:8000/bubbles
+charts = ['org', 'bubbles', 'item', 'timeline', 'states', 'browsers', 'wheel']
+
+@jp.SetRoute('/{chart_name}')
+async def chart_test(request):
+    wp = jp.WebPage()
+    chart_name = request.path_params.get('chart_name', 'item')   # Default chart is item
+    if chart_name not in charts:
+        chart_name = 'item'
+    chart_options = await jp.get(f'https://elimintz.github.io/charts/{chart_name}', 'text')
+    my_chart = jp.HighCharts(a=wp, classes='m-2 p-2 border w-3/4', options=chart_options)
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>The program above fetches chart definitions from a static page server (a github repository in this case) based on the URL. Take a look at the different charts for a small taste of what Highcharts can do (these are all taken from the Highcharts website where there are many more examples). You could deploy the program above and have others accessing the charts via the appropriate URLs. 
+The chart definitions can be found <a href="https://github.com/elimintz/elimintz.github.io/tree/master/charts">here</a>.</p>
+<p>Another option is to send people the code snippet above to run by themselves. Of course, they would need to have the appropriate environment installed on their computer. </p>
+<p>The advantage of reading the chart definition remotely is that you can change these remote files and additional files without needing to resend or restart your program. </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

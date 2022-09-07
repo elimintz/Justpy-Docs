@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Tooltips - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../stock_charts/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../updating_charts/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#tooltips" class="nav-link">Tooltips</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#basic-use" class="nav-link">Basic Use</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tooltip-debouncing" class="nav-link">Tooltip Debouncing</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-point-data-to-format-tooltip" class="nav-link">Using Point Data to Format Tooltip</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#tooltip-positioning" class="nav-link">Tooltip Positioning</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fixed-tooltip" class="nav-link">Fixed Tooltip</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#shared-and-split-tooltips" class="nav-link">Shared and Split Tooltips</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="tooltips">Tooltips</h1>
+<h2 id="basic-use">Basic Use</h2>
+<p>The tooltip is the popup that is shown when you hover over a point on the chart. It provides one of the advantages of using interactive charts as it makes the chart more informative.</p>
+<p>Highcharts allows defining a tooltip using a very versatile formatting function (in JavaScript). JustPy allows writing tooltip formatters for Highcharts charts in Python just like any other event handler. Let's look at a concrete example.</p>
+<pre><code class="language-python">import justpy as jp
+
+my_chart_def = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Tourists in Middle Earth'
+        },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    series: [{
+        name: &quot;Tourists in '000&quot;,
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+    }]
+}
+&quot;&quot;&quot;
+
+async def tooltip_formatter(self, msg):
+    return await self.tooltip_update('&lt;div&gt;My tooltip!&lt;/div&gt;', msg.websocket)
+
+def chart_test():
+    wp = jp.WebPage()
+    # First chart
+    wp.css = '.h-chart {height: 300px;}'
+    chart1 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart1.options.subtitle.text = 'Default Tooltip'
+    # Second chart
+    chart2 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart2.options.subtitle.text = 'Custom Tooltip'
+    chart2.on('tooltip', tooltip_formatter)
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>In this example we put two charts on the page. They are identical except for their subtitle and the fact that that the second one has a custom tooltip formatter. </p>
+<p>The tooltip formatting function (the handler for the tooltip event) is called <code>tooltip_formatter</code> and has one line in it:</p>
+<pre><code class="language-python">return await self.tooltip_update('&lt;div&gt;My tooltip!&lt;/div&gt;', msg.websocket)
+</code></pre>
+<p>This line returns the result of running the method <code>tooltip_update</code> of the HighCharts component. The method has two arguments (in addition to self). The first is an HTML string which determines the content of the tooltip and the second is the websocket over which this HTML needs to be transmitted. The websocket of the page on which the event occurred can be found in <code>msg.websocket</code> and this is the websocket we use (<code>msg</code> is the second argument of the event handler).</p>
+<p>!!! note
+    Since the method <code>tooltip_update</code> is a coroutine, it needs be awaited and the tooltip event handler needs to be defined with the keyword async.</p>
+<h2 id="tooltip-debouncing">Tooltip Debouncing</h2>
+<p>If you quickly mouseover several points on charts with user defined formatters, you will see the "Loading…" inscription instead of the information you expect. Only when no new tooltip event occurs for 100ms (0.1 second), JustPy notifies its backend that a tooltip event has happened. This prevents the server from being inundated with irrelevant tooltip requests as the user moves the mouse over the chart.</p>
+<p>The debouncing delay can be changed by setting the attribute <code>tooltip_debounce</code> which is by default 100ms. The following command changes the debounce period to 500ms:</p>
+<pre><code class="language-python">chart2.tooltip_debounce = 500  # Assign value of debounce period in ms
+</code></pre>
+<h2 id="using-point-data-to-format-tooltip">Using Point Data to Format Tooltip</h2>
+<p>So far, the tooltip we return for all points is the same. That is not very interesting. We would like the tooltip to be much more descriptive.</p>
+<p>The second argument to the tooltip formatter (<code>msg</code> in our case) has values specific to tooltip events to assist us with this. In addition to the usual fields it contains the fields:
+- <code>msg.x</code> - The x coordinate of the point
+- <code>msg.category</code> - If the x value is not a number, for example 'Jan' or 'Feb', it will show up here
+- <code>msg.y</code> - The y coordinate of the point
+- <code>msg.color</code> - The color of the point
+- <code>msg.series_name</code> - The name of the series the point is in
+- <code>msg.series_index</code> - The index the series the point is in
+- <code>msg.point_index</code> - The index the point in its series</p>
+<p>Let's use some of the fields above to create a more informative tooltip. Please replace <code>tooltip_formatter</code> with this new version and run the program:</p>
+<pre><code class="language-python">async def tooltip_formatter(self, msg):
+    tooltip_html = f&quot;&quot;&quot;
+    &lt;div style=&quot;color: {msg.color};&quot;&gt;{msg.series_name}&lt;/div&gt;
+    &lt;div&gt;{msg.category}&lt;/div&gt;
+    &lt;div&gt;x: {msg.x}, y: {msg.y}&lt;/div&gt;
+    &quot;&quot;&quot;
+    return await self.tooltip_update(tooltip_html, msg.websocket)
+</code></pre>
+<p>We use the Python f-string template like features to create a tooltip that includes information about each point. Notice how <code>msg.color</code> is used to give the series name the color of the point. In charts with multiple series, this becomes very useful.</p>
+<p>There is another way to create the HTML string used to update the tooltip. Try using the following <code>tooltip_formatter</code> instead of the one above:</p>
+<pre><code class="language-python">async def tooltip_formatter(self, msg):
+    d1 = jp.Div(text=msg.series_name, style=f'color: {msg.color};')
+    d2 = jp.Div(text=msg.category)
+    d3 = jp.Div(text=f'x: {msg.x}, y: {msg.y}')
+    tooltip_html = d1.to_html() + d2.to_html() + d3.to_html()
+    return await self.tooltip_update(tooltip_html, msg.websocket)
+</code></pre>
+<p>This time we create JustPy components and then use the <code>to_html()</code> method to convert them to HTML. Both methods work well and you should use the one you are most comfortable with.</p>
+<h2 id="tooltip-positioning">Tooltip Positioning</h2>
+<p>You may have noticed in the example above, that the tooltip covers part of the column instead of showing up above it. When we create custom tooltips, we need to help Highcharts position them correctly. We do this using the <code>tooltip_x</code> and <code>tooltip_y</code> attributes of the JustPy HighCharts class. These attributes determine the offset in pixels for the tooltip relative to where Higcharts estimates it needs to show it. In practice, you will need to experiment with different values to get the positioning you want.</p>
+<p>Here is the same example as above but with the tooltip position changed:</p>
+<pre><code class="language-python">import justpy as jp
+
+my_chart_def = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Tourists in Middle Earth'
+        },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    series: [{
+        name: &quot;Tourists in '000&quot;,
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+    }
+    ]
+}
+&quot;&quot;&quot;
+
+async def tooltip_formatter(self, msg):
+    tooltip_html = f&quot;&quot;&quot;
+    &lt;div style=&quot;color: {msg.color};&quot;&gt;{msg.series_name}&lt;/div&gt;
+    &lt;div&gt;{msg.category}&lt;/div&gt;
+    &lt;div&gt;x: {msg.x} y: {msg.y}&lt;/div&gt;
+    &quot;&quot;&quot;
+    return await self.tooltip_update(tooltip_html, msg.websocket)
+
+def chart_test():
+    wp = jp.WebPage()
+    # First chart
+    chart1 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart1.options.subtitle.text = 'Default Tooltip'
+
+    # Second chart
+    chart2 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart2.options.subtitle.text = 'Custom Tooltip'
+    chart2.on('tooltip', tooltip_formatter)
+    chart2.tooltip_y = 80
+    chart2.tooltip_x = -55
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>We added the lines:</p>
+<pre><code class="language-python">    chart2.tooltip_y = 80
+    chart2.tooltip_x = -55
+</code></pre>
+<p>to get the desired positioning. </p>
+<h2 id="fixed-tooltip">Fixed Tooltip</h2>
+<p>A tooltip can be fixed to one position. This is done by setting the chart attribute <code>tooltip_fixed</code> to <code>True</code>. When the tooltip is fixed, <code>tooltip_x</code> and <code>tooltip_y</code> designate the absolute position in the chart to place the tooltip. </p>
+<p>Here is the example above but this time with a fixed tooltip:</p>
+<pre><code class="language-python">import justpy as jp
+
+my_chart_def = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Tourists in Middle Earth'
+        },
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    },
+    series: [{
+        name: &quot;Tourists in '000&quot;,
+        data: [29.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+    }
+    ]
+}
+&quot;&quot;&quot;
+
+async def tooltip_formatter(self, msg):
+    tooltip_html = f&quot;&quot;&quot;
+    &lt;div style=&quot;color: {msg.color};&quot;&gt;{msg.series_name}&lt;/div&gt;
+    &lt;div&gt;{msg.category}&lt;/div&gt;
+    &lt;div&gt;x: {msg.x} y: {msg.y}&lt;/div&gt;
+    &quot;&quot;&quot;
+    return await self.tooltip_update(tooltip_html, msg.websocket)
+
+def chart_test():
+    wp = jp.WebPage()
+    # First chart
+    chart1 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart1.options.subtitle.text = 'Default Tooltip'
+
+    # Second chart
+    chart2 = jp.HighCharts(a=wp, classes='m-2 p-2 border w-1/2', options=my_chart_def)
+    chart2.options.subtitle.text = 'Custom Tooltip'
+    chart2.on('tooltip', tooltip_formatter)
+    chart2.tooltip_fixed = True
+    chart2.tooltip_y = 100
+    chart2.tooltip_x = 100
+    return wp
+
+jp.justpy(chart_test)
+</code></pre>
+<p>The lines that make the difference are:</p>
+<pre><code class="language-python">    chart2.tooltip_fixed = True
+    chart2.tooltip_y = 100
+    chart2.tooltip_x = 100
+</code></pre>
+<h2 id="shared-and-split-tooltips">Shared and Split Tooltips</h2>
+<h3 id="default-tooltips">Default Tooltips</h3>
+<p>Highcharts supports shared and split tooltips in addition to the regular tooltip. To see the difference between the three, run the example below which includes the same chart three times, each time with a different kind of tooltip. This is how the Highcharts default tooltip looks like.</p>
+<pre><code class="language-python">import justpy as jp
+
+# https://www.highcharts.com/demo/line-basic
+chart_def = &quot;&quot;&quot;
+{
+ chart: {
+        type: 'spline'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: 'JustPy Tooltip Demo'
+    },
+    yAxis: {
+        title: {
+            text: 'Number of Employees'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    plotOptions: {
+        series: {
+            pointStart: 2010
+        }
+    },
+    series: [{
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Manufacturing',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: 'Sales &amp; Distribution',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: 'Project Development',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'Other',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }]
+}
+&quot;&quot;&quot;
+
+
+def tool_tip_demo():
+    wp = jp.WebPage()
+    jp.Div(text='Charts with default Highcharts tooltip', classes='m-2 p-2 text-xl bg-blue-500 text-white',a =wp)
+    d = jp.Div(classes='flex flex-wrap ', a=wp)
+    my_charts = []
+    for i in range(3):
+        my_charts.append(jp.HighCharts(a=d, classes='m-2 p-2 border', options=chart_def))
+    my_charts[0].options.tooltip.shared = False
+    my_charts[1].options.tooltip.shared = True
+    my_charts[2].options.tooltip.split = True
+    my_charts[0].options.title.text = 'Simple Tooltip'
+    my_charts[1].options.title.text = 'Shared Tooltip'
+    my_charts[2].options.title.text = 'Split Tooltip'
+    return wp
+
+jp.justpy(tool_tip_demo)
+</code></pre>
+<h3 id="custom-tooltips">Custom Tooltips</h3>
+<p>In the example below we add three additional charts with custom tooltips to the page. In total, there are now six charts on the page. The first three use the default Highcharts tooltip and the second three use custom tooltips. The first custom tooltip is of type single, the second is of type shared and the third is a split tooltip.</p>
+<p>For single and shared tooltip handlers the first argument ofthe  <code>tooltip_update</code> is an HTML string. For split tooltip the first argument is a list of HTML strings. The first string is for the x value and the following strings on the list are the HTML strings per series.</p>
+<p>In the case of shared and split tooltips, the <code>msg</code> argument of the tooltip formatter includes a list of the properties of all the points with the corresponding x value. It is accessed as <code>msg.points</code>. As you will see in the example below, we iterate over this list in the tooltip handlers to generate the required output.</p>
+<pre><code class="language-python">import justpy as jp
+
+# https://www.highcharts.com/demo/line-basic
+chart_def = &quot;&quot;&quot;
+{
+ chart: {
+        type: 'spline'
+    },
+    title: {
+        text: ''
+    },
+    subtitle: {
+        text: 'JustPy Tooltip Demo'
+    },
+    yAxis: {
+        title: {
+            text: 'Number of Employees'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+    plotOptions: {
+        series: {
+            pointStart: 2010
+        }
+    },
+    series: [{
+        name: 'Installation',
+        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    }, {
+        name: 'Manufacturing',
+        data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    }, {
+        name: 'Sales &amp; Distribution',
+        data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    }, {
+        name: 'Project Development',
+        data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    }, {
+        name: 'Other',
+        data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    }]
+}
+&quot;&quot;&quot;
+
+
+def tool_tip_demo():
+    wp = jp.WebPage()
+    jp.Div(text='Charts with default Highcharts tooltip', classes='m-2 p-2 text-xl bg-blue-500 text-white',a =wp)
+    d = jp.Div(classes='flex flex-wrap ', a=wp)
+    my_charts = []
+    for i in range(3):
+        my_charts.append(jp.HighCharts(a=d, classes='m-2 p-2 border', options=chart_def))
+    my_charts[0].options.tooltip.shared = False
+    my_charts[1].options.tooltip.shared = True
+    my_charts[2].options.tooltip.split = True
+    my_charts[0].options.title.text = 'Simple Tooltip'
+    my_charts[1].options.title.text = 'Shared Tooltip'
+    my_charts[2].options.title.text = 'Split Tooltip'
+
+    jp.Div(text='Charts with user defined tooltip formatter functions',
+           classes='m-2 p-2 text-xl bg-blue-500 text-white', a=wp)
+    d = jp.Div(classes='flex flex-wrap', a=wp)
+    my_charts = []
+    for i in range(3):
+        my_charts.append(jp.HighCharts(a=d, classes='m-2 p-2 border', options=chart_def))
+
+    my_charts[0].options.tooltip.shared = False
+    my_charts[1].options.tooltip.shared = True
+    my_charts[2].options.tooltip.split = True
+    my_charts[0].options.title.text = 'Simple Tooltip - Formatter Example'
+    my_charts[1].options.title.text = 'Shared Tooltip - Formatter Example'
+    my_charts[2].options.title.text = 'Split Tooltip - Formatter Example'
+
+    my_charts[0].on('tooltip', simple_tooltip_formatter)
+    my_charts[1].on('tooltip', shared_tooltip_formatter)
+    my_charts[2].on('tooltip', split_tooltip_formatter)
+    return wp
+
+
+async def simple_tooltip_formatter(self, msg):
+    tooltip_html = f&quot;&quot;&quot;
+    &lt;div class=&quot;text-red-500&quot;&gt;
+    &lt;div&gt;&lt;span style=&quot;color: {msg.color}&quot;&gt;&amp;#x25CF;&amp;nbsp;&lt;/span&gt;{msg.series_name}&lt;/div&gt;
+    &lt;div&gt;Year: {msg.x}&lt;/div&gt;
+    &lt;div&gt;Number of employees: {&quot;{:,}&quot;.format(msg.y)}&lt;/div&gt;
+    &lt;/div&gt;
+    &quot;&quot;&quot;
+    return await self.tooltip_update(tooltip_html, msg.websocket)
+
+
+async def shared_tooltip_formatter(self, msg):
+    tooltip_div = jp.Div(classes=&quot;text-white bg-blue-400&quot;)
+    jp.Span(text=f'Year: {msg.x}', classes='text-lg', a=tooltip_div)
+    for point in msg.points:
+        point_div = jp.Div(a=tooltip_div)
+        jp.Span(text=f'&amp;#x25CF; {point.series_name}', classes='bg-white', style=f'color: {point.color}', a=point_div)
+        jp.Span(text=f'Number of employees: {&quot;{:,}&quot;.format(point.y)}', a=point_div)
+    return await self.tooltip_update(tooltip_div.to_html(), msg.websocket)
+
+
+async def split_tooltip_formatter(self, msg):
+    tooltip_array = [f'The x value is {msg.x}']
+    for point in msg.points:
+        point_div = jp.Div()
+        jp.Span(text='&amp;#x25CF;', classes='bg-white', style=f'color: {point.color}', a=point_div)
+        jp.Span(text=f'{point.series_name}', a=point_div)
+        jp.Span(text=f'Year: {point.x}', a=point_div)
+        jp.Span(text=f'Number of employees: {&quot;{:,}&quot;.format(point.y)}', a=point_div)
+        tooltip_array.append(point_div.to_html())
+    return await self.tooltip_update(tooltip_array, msg.websocket)
+
+
+jp.justpy(tool_tip_demo)
+</code></pre>
+<p>The <code>split_tooltip_formatter</code> function is a little more complex as can be seen above. A split tooltip means that each series has its own separate popup box and therefore the HTML for each series needs to be returned. The <code>tooltip_update</code> method therefore takes as its first argument a list of strings instead of a string as in the other cases. The first string in the list represents the HTML for the x axis value. </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

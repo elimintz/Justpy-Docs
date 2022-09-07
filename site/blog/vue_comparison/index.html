@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Comparing Vue.js to JustPy - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../reactivity/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../vue_examples/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#comparing-vuejs-to-justpy" class="nav-link">Comparing Vue.js to JustPy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#example-from-vue-guide" class="nav-link">Example from Vue Guide</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#vue-video-example" class="nav-link">Vue video example</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#todo-list-example" class="nav-link">Todo list example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#list-rendering-v-for" class="nav-link">List Rendering (v-for)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#x-for" class="nav-link">x-for</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#x-data-vs-class" class="nav-link">x-data vs class</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="comparing-vuejs-to-justpy">Comparing Vue.js to JustPy</h1>
+<h1 id="example-from-vue-guide">Example from Vue Guide</h1>
+<p>https://vuejs.org/v2/guide/components.html#Base-Example</p>
+<pre><code class="language-python">import justpy as jp
+
+class ButtonCounter(jp.Button):
+
+    def __init__(self, **kwargs):
+        self.count = 0
+        super().__init__(**kwargs)
+        self.on('click', self.button_clicked)
+
+    def button_clicked(self, msg):
+        self.count += 1
+
+    def react(self, data):
+        self.text = f'You clicked me {self.count} times.'
+
+
+async def button_counter_demo():
+    wp = jp.WebPage(tailwind=False)
+    for i in range(5):
+        ButtonCounter(a=wp, count=i, style='margin: 10px')
+    return wp
+
+jp.justpy(button_counter_demo)
+</code></pre>
+<h1 id="vue-video-example">Vue video example</h1>
+<pre><code class="language-python">import justpy as jp
+
+products = [
+            {'id': 1, 'quantity': 1, 'name': 'Compass'},
+            {'id': 2, 'quantity': 0, 'name': 'Jacket'},
+            {'id': 3, 'quantity': 5, 'name': 'Hiking Socks'},
+            {'id': 4, 'quantity': 2, 'name': 'Suntan Lotion'},
+            ]
+
+
+class Products(jp.Div):
+
+    def __init__(self, **kwargs):
+        self.products = products
+        super().__init__(**kwargs)
+        self.ul = jp.Ul(a=self)
+        self.total_inventory = jp.H2(text='Totals', a=self)
+
+    def total_products(self):
+        total = 0
+        for product in self.products:
+            total += product[&quot;quantity&quot;]
+        return total
+
+    def react(self, data):
+        self.ul.delete_components()
+        for product in self.products:
+            item = jp.Li(a=self.ul)
+            jp.Input(type='number', product=product, a=item, value=product[&quot;quantity&quot;], input='self.product[&quot;quantity&quot;] = self.value')
+            jp.Span(text=f'{product[&quot;quantity&quot;]} {product[&quot;name&quot;]}', a=item, style='margin-left: 10px')
+            if product[&quot;quantity&quot;] == 0:
+                jp.Span(text=' - OUT OF STOCK', a=item)
+            jp.Button(text='Add', a=item, product=product, click='self.product[&quot;quantity&quot;] += 1', style='margin-left: 10px')
+        self.total_inventory.text = f'Total Inventory: {self.total_products()}'
+
+
+def product_app():
+    wp = jp.WebPage(tailwind=False)
+    Products(a=wp)
+    return wp
+
+jp.justpy(product_app)
+
+</code></pre>
+<h2 id="todo-list-example">Todo list example</h2>
+<pre><code class="language-python">import justpy as jp
+
+
+class TodoList(jp.Div):
+
+    def __init__(self, **kwargs):
+        self.todos = []
+        super().__init__(**kwargs)
+        self.ol = jp.Ol(a=self)
+        self.task = jp.Input(placeholder='Enter task', a=self)
+        jp.Button(text='Add Task', a=self, click=self.add_task, style='margin-left: 10px')
+
+    def add_task(self, msg):
+        self.todos.append(self.task.value)
+        self.task.value = ''
+
+    def react(self, data):
+        self.ol.delete_components()
+        for todo in self.todos:
+            jp.Li(text=todo, a=self.ol)
+
+
+def todo_app():
+    wp = jp.WebPage(tailwind=False)
+    TodoList(a=wp, todos=['Buy groceries', 'Learn JustPy', 'Do errands'])
+    return wp
+
+jp.justpy(todo_app)
+</code></pre>
+<p>First things first: JustPY uses Vue on the front end. Without Vue there is no JustPy. </p>
+<p>It is important to understand how JustPy uses Vue to understand the differences between the two. In JustPy, web pages as well as HTML components are represented as instances of classes. The HTML div element is represented by the JustPy class Div.</p>
+<p>You add a div to web page in JustPY by adding a Div instance to a WebPage instance like so:</p>
+<pre><code class="language-python">import justpy as jp
+
+wp = jp.WebPage()
+my_div = jp.Div(text='hello')
+wp.add(my_div)
+
+</code></pre>
+<p>All JustPy elements have a method called <code>convert_object_to_dict</code> that do just that.</p>
+<pre><code class="language-python">import justpy as jp
+
+my_div = jp.Div(text='hello')
+my_div.add(jp.Span(text='span text', style='margin: 5px'))
+print(my_div.convert_object_to_dict())
+</code></pre>
+<p>would give the following result:</p>
+<pre><code class="language-python">{'attrs': {}, 'id': None, 'vue_type': 'html_component', 'show': True, 'events': [], 'event_modifiers': {}, 'classes': '', 'style': '', 'set_focus': False, 'html_tag': 'div', 'class_name': 'Div', 'event_propagation': True, 'inner_html': '', 'animation': False, 'debug': False, 'directives': {}, 'scoped_slots': {}, 'object_props': [{'attrs': {}, 'id': None, 'vue_type': 'html_component', 'show': True, 'events': [], 'event_modifiers': {}, 'classes': '', 'style': 'margin: 5px', 'set_focus': False, 'html_tag': 'span', 'class_name': 'Span', 'event_propagation': True, 'inner_html': '', 'animation': False, 'debug': False, 'directives': {}, 'scoped_slots': {}, 'object_props': [], 'text': 'span text'}], 'text': 'hello'}
+
+</code></pre>
+<p>This dictionary is converted to JSON and sent to the browser. It is then used as the props for the Vue component that renders the element on the page.</p>
+<p>To recap, JustPy creates a JSON object representing the page, and that object is fed into the Vue app which renders the page.</p>
+<p>Creating the dictionary on the server side is very cheap computationally. All the rendering heavy lifting is done by Vue. If as a consequence of an event handler a page changes, a new dictionary is sent to the page and again fed to the Vue app which re-renders the required elements. </p>
+<p>When</p>
+<p>JustPy renders a page in a browser tab using the following steps:
+1) For all instances on the page, a Python dictionary that describes their attributes is generated. T</p>
+<p>explain how vue is used</p>
+<p>This comparison is meant to help people familiar with Vue understand JustPy better. </p>
+<p>JustPy is not a backend or frontend framework. When working with JustPy there is no distinction between the backend and the frontend.
+The reason you would use JustPy instead of Vue is if you are interested working predominantly in Python </p>
+<p>This comparison is not meant to convince you to use one or the other</p>
+<p>In vue there is distinction between html and javascript (render function means you don't need html). In JustPY it is all python (but you can use html if you like parse_html).</p>
+<p>Main difference is reactivity. How to solve this? Example with react function. But how to automate. Show how to make reactive list based on object.</p>
+<p>You need to do this with components. A component that is a list. You can make it reactive. Show example of for without component and then with component.</p>
+<h2 id="list-rendering-v-for">List Rendering (v-for)</h2>
+<p>The Vue.js examples are <a href="https://vuejs.org/v2/guide/list.html">here</a>.</p>
+<p>Example of rendering a simple list:</p>
+<p>```python
+import justpy as jp</p>
+<p>def for_example():
+    wp = jp.WebPage(tailwind=False)<br />
+    items = [{'message': 'Foo'},
+             {'message': 'Bar'}]
+    ul = jp.Ul(a=wp)
+    for item in items:
+        jp.Li(text=f'{item["message"]}', a=ul)
+    return wp</p>
+<p>jp.justpy(for_example)</p>
+<pre><code>
+Second example with index:
+
+```python
+import justpy as jp
+
+def for_example():
+    wp = jp.WebPage(tailwind=False)
+    ul = jp.Ul(a=wp)
+    ul.items = [{'message': 'Foo'},
+             {'message': 'Bar'}]
+    ul.parent_message = 'Parent'
+    for index, item in enumerate(ul.items):
+        jp.Li(text=f'{ul.parent_message}-{index}-{item[&quot;message&quot;]}', a=ul)
+    return wp
+
+jp.justpy(for_example)
+</code></pre>
+<p>Note that the HTML elements are Python class instances and therefore we can assign values to their attributes.</p>
+<h3 id="rendering-an-object">Rendering an object</h3>
+<p>https://vuejs.org/v2/guide/list.html#v-for-with-an-Object
+Rendering keys and values of an object:</p>
+<pre><code class="language-python">import justpy as jp
+
+
+def for_example():
+    wp = jp.WebPage(tailwind=False)
+    ul = jp.Ul(a=wp)
+    object = {
+      'title': 'How to do lists in Vue',
+      'author': 'Jane Doe',
+      'publishedAt': '2016-04-10'
+    }
+    for name, value in object.items():
+        jp.Li(text=f'{name}: {value}', a=ul)
+    return wp
+
+jp.justpy(for_example)
+
+</code></pre>
+<p>With index:</p>
+<pre><code class="language-python">import justpy as jp
+
+
+def for_example():
+    wp = jp.WebPage(tailwind=False)
+    object = {
+      'title': 'How to do lists in Vue',
+      'author': 'Jane Doe',
+      'publishedAt': '2016-04-10'
+    }
+    for index, (name, value) in enumerate(object.items()):
+        jp.Div(text=f'{index}. {name}: {value}', a=wp)
+    return wp
+
+jp.justpy(for_example)
+
+</code></pre>
+<h3 id="displaying-filteredsorted-results">Displaying Filtered/Sorted Results</h3>
+<p>https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results</p>
+<h3 id="reactivity">Reactivity</h3>
+<p>JustPy is not reactive in the sense that if you change the value of an object, the rendered view will change automatically.
+This manifests itself when items are added or deleted, not when their property changes like text</p>
+<h2 id="x-for">x-for</h2>
+<pre><code class="language-angular2html">&lt;template x-for=&quot;(item, index) in items&quot; :key=&quot;index&quot;&gt;
+    &lt;!-- You can also reference &quot;index&quot; inside the iteration if you need. --&gt;
+    &lt;div x-text=&quot;index&quot;&gt;&lt;/div&gt;
+&lt;/template&gt;
+</code></pre>
+<pre><code class="language-python">from justpy import WebPage, Div, SetRoute
+
+SetRoute('/for')
+def for_example():
+    wp = WebPage()
+    items = ['car', 'plane', 'train']
+    for index, item in enumerate(items):
+        Div(text=f'Item: {item}, Index: {index}', a=wp)
+    return wp
+</code></pre>
+<p>Only applicable part:</p>
+<pre><code class="language-python">items = ['car', 'plane', 'train']
+for index, item in enumerate(items):
+    Div(text=f'Item: {item}, Index: {index}', a=some_container)
+</code></pre>
+<p>Nesting:</p>
+<pre><code class="language-python">from justpy import WebPage, Div, SetRoute
+
+SetRoute('/nested_for')
+def for_example():
+    wp = WebPage()
+    items = {'car': ['Ford', 'Toyota', 'GM'], 'plane': ['Boeing', 'Airbus'], 'train': ['Amtrak', 'NJ Transit']}
+    for index, item in enumerate(items):
+        for sub_item in items[item]:
+            Div(text=f'Item: {item}, Sub Item: {sub_item}', a=wp)
+    return wp
+</code></pre>
+<h2 id="x-data-vs-class">x-data vs class</h2>
+<p>https://github.com/alpinejs/alpine#use</p>
+<pre><code class="language-python">import justpy as jp
+
+class SimpleDropdown(jp.Div):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        b = jp.Button(text='Open Dropdown', a=self, click='self.u.show = not self.u.show')
+        b.u = jp.Ul(a=self, text='Drop Down Body', show=False, click__out='self.show = False')
+
+def alpine_test():
+    wp =jp.WebPage()
+    SimpleDropdown(a=wp)
+    return wp
+
+jp.justpy(alpine_test)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

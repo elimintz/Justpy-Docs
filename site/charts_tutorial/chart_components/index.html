@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Chart Custom Components - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../blog/vue_examples/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../chart_events/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chart-custom-components" class="nav-link">Chart Custom Components</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#pie-chart-component" class="nav-link">Pie Chart Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#histogram-component" class="nav-link">Histogram Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scatter-with-regression" class="nav-link">Scatter with Regression</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="chart-custom-components">Chart Custom Components</h1>
+<p>Components in JustPy are Python classes that inherit from other JustPy components. Components that inherit from HighCharts can also be defined. For example, below we define and use a pie chart component. </p>
+<h2 id="pie-chart-component">Pie Chart Component</h2>
+<pre><code class="language-python">import justpy as jp
+
+
+class MyPie(jp.HighCharts):
+
+    _options = &quot;&quot;&quot;
+{
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Pie Chart'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: &lt;b&gt;{point.percentage:.1f}%&lt;/b&gt;'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '&lt;b&gt;{point.name}&lt;/b&gt;: {point.percentage:.1f}%',
+            }
+        }
+    },
+    series: []
+}
+    &quot;&quot;&quot;
+
+    def __init__(self, data, **kwargs):
+        self.labels = []
+        super().__init__(**kwargs)
+        self.load_json(self._options)
+        pie_series = jp.Dict()
+        pie_series.data = []
+        for i, value in enumerate(data):
+            c = jp.Dict()
+            try:
+                c.name = self.labels[i]
+            except:
+                c.name = str(value)
+            c.y = value
+            pie_series.data.append(c)
+        self.options.series.append(pie_series)
+
+
+def pie_test(request):
+    wp = jp.WebPage()
+    chart = MyPie([2,3,4,5], labels=['Apples', 'Pears', 'Bananas', 'Melons'], a=wp, classes='m-2 p-2 border w-1/2')
+    chart.options.title.text = 'Fruit Distribution'
+    chart.options.series[0].name = 'Fruits'
+    return wp
+
+jp.justpy(pie_test)
+
+</code></pre>
+<p>The chart instance that is created can be further modified by changing its options. In the example above we change the chart title and the name of the series.</p>
+<h2 id="histogram-component">Histogram Component</h2>
+<p>A component that comes with JustPy is Histogram. It simplifies creating a histogram chart. In this example, we include the  definition.</p>
+<p>!!! warning
+    In order to run this example, you need to install <a href="https://numpy.org/">numpy</a></p>
+<pre><code class="language-python">import justpy as jp
+import random
+import numpy
+
+class Histogram(jp.HighCharts):
+
+    _options = &quot;&quot;&quot;
+{
+    title: {
+        text: 'Highcharts Histogram'
+    },
+    xAxis: [{
+        title: { text: 'Data' },
+        alignTicks: false
+    }, {
+        title: { text: 'Histogram' },
+        alignTicks: false,
+        opposite: true
+    }],
+
+    yAxis: [{
+        title: { text: 'Data' }
+    }, {
+        title: { text: 'Histogram' },
+        opposite: true
+    }],
+
+    series: [{
+        name: 'Histogram',
+        type: 'histogram',
+        xAxis: 1,
+        yAxis: 1,
+        baseSeries: 's1',
+        zIndex: -1
+    }, {
+        name: 'Data',
+        type: 'scatter',
+        data: [],
+        id: 's1',
+        marker: {
+            radius: 1.5
+        }
+    }]
+}
+
+    &quot;&quot;&quot;
+
+    def __init__(self, data, **kwargs):
+        super().__init__(**kwargs)
+        self.load_json(self._options)
+        self.options.series[1].data = list(data)
+
+def histogram_test(request):
+    wp = jp.WebPage()
+    # Uniform distribution
+    data = [random.randrange(10) for i in range(100)]
+    chart = jp.Histogram(data, a=wp, classes='m-2 border w-1/2')
+    chart.options.title.text = 'Uniform Distribution Histogram'
+    # Normal distribution
+    data = [numpy.random.normal() for i in range(1000)]
+    chart = jp.Histogram(data, a=wp, classes='m-2 border w-1/2')
+    chart.options.title.text = 'Normal Distribution Histogram'
+    return wp
+
+jp.justpy(histogram_test)
+
+</code></pre>
+<p>The Histogram class relies on a <a href="https://www.highcharts.com/docs/chart-and-series-types/histogram-series">chart definition</a> from the Highcharts documentation.</p>
+<p>Encompassing the chart definition in a class simplifies its use. If you build such classes for your favorite charts, please send them to me to include in JustPy. Once the Histogram class (component) is defined, reusing it is simple and does not require remembering the specifics of the Highcharts API. The instance of HighCharts can be further modified. In the example above, we change the chart titles after the chart has been created.</p>
+<h2 id="scatter-with-regression">Scatter with Regression</h2>
+<p>Let's build a component that automatically adds a regression line to a scatter chart. We will use the predefined JustPy Scatter component. </p>
+<pre><code class="language-python">import justpy as jp
+import numpy as np
+
+class ScatterWithRegression(jp.Scatter):
+
+    def __init__(self, x, y, **kwargs):
+        super().__init__(x, y, **kwargs)
+        x = np.asarray(x)
+        y = np.asarray(y)
+        m = (len(x) * np.sum(x * y) - np.sum(x) * np.sum(y)) / (len(x) * np.sum(x * x) - np.sum(x) ** 2)
+        b = (np.sum(y) - m * np.sum(x)) / len(x)
+        s = jp.Dict()   # The new series
+        s.type = 'line'
+        s.marker.enabled = False
+        s.enableMouseTracking = False
+        min = float(x.min())
+        max = float(x.max())
+        s.data = [[min, m * min + b], [max, m * max + b]]
+        s.name = f'Regression, m: {round(m, 3)}, b: {round(b, 3)}'
+        self.options.series.append(s)
+
+
+def scatter_test(request):
+    wp = jp.WebPage(highcharts_theme='grid-light')
+    x = [108,19,13,124,40,57,23,14,45,10,5,48,11,23,7,2,24,6,3,23,6,9,9,3,29,7,4,20,7,4,0,25,6,5,22,11,61,12,4,16,13,60,41,37,55,41,11,27,8,3,17,13,13,15,8,29,30,24,9,31,14,53,26]
+    y = [392.5,46.2,15.7,422.2,119.4,170.9,56.9,77.5,214,65.3,20.9,248.1,23.5,39.6,48.8,6.6,134.9,50.9,4.4,113,14.8,48.7,52.1,13.2,103.9,77.5,11.8,98.1,27.9,38.1,0,69.2,14.6,40.3,161.5,57.2,217.6,58.1,12.6,59.6,89.9,202.4,181.3,152.8,162.8,73.4,21.3,92.6,76.1,39.9,142.1,93,31.9,32.1,55.6,133.3,194.5,137.9,87.4,209.8,95.5,244.6,187.5]
+    jp.Scatter(x, y, a=wp, classes='m-2 w-1/2 border', style='height: 300px')
+    sr = ScatterWithRegression(x, y, a=wp, classes='m-2 w-1/2 border', style='height: 300px')
+    sr.options.title.text = 'Scatter Chart with Regression'
+    return wp
+
+jp.justpy(scatter_test)
+</code></pre>
+<p>The new component adds another series to the chart. This series has only two points which are the regression values of the smallest and largest x values. The line between them is the regression line. We now have a component we can reuse to plot a scatter plot with a regression line.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

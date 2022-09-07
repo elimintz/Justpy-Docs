@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Grid Events - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../grid_api/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../introduction/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#grid-events" class="nav-link">Grid Events</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#example-1" class="nav-link">Example 1</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#example-2" class="nav-link">Example 2</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#example-3-multiple-row-selection" class="nav-link">Example 3 - Multiple Row Selection</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#event-properties" class="nav-link">Event Properties</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linking-a-chart-and-a-grid-using-grid-events" class="nav-link">Linking a chart and a grid using grid events</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#create-a-component-to-link-chart-and-grid" class="nav-link">Create a Component to Link Chart and Grid</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="grid-events">Grid Events</h1>
+<h2 id="example-1">Example 1</h2>
+<p>Ag-Grid supports many <a href="https://www.ag-grid.com/javascript-grid-events/">events</a>. Let's look at some examples.</p>
+<p>To begin, let's display in a separate Div the data from a grid row when it is selected.</p>
+<pre><code class="language-python">import justpy as jp
+import pandas as pd
+
+wm_df = pd.read_csv('https://elimintz.github.io/women_majors.csv').round(2)
+
+def row_selected(self, msg):
+    print(msg)
+    if msg.selected:
+        self.row_data_div.text = msg.data
+        self.row_selected = msg.rowIndex
+    elif self.row_selected == msg.rowIndex:
+        self.row_data_div.text = ''
+
+def grid_test():
+    wp = jp.WebPage()
+    row_data_div = jp.Div(a=wp)
+    grid = wm_df.jp.ag_grid(a=wp)
+    grid.row_data_div = row_data_div
+    grid.on('rowSelected', row_selected)
+    grid.options.columnDefs[0].checkboxSelection = True
+    return wp
+
+jp.justpy(grid_test)
+</code></pre>
+<p>We add a Div named <code>row_data_div</code> to the page and the <code>row_selected</code> function, the event handler for the grid's rowSelected event, sets the row data as the text of the Div. </p>
+<p>JustPy provides in <code>msg.data</code> all the data from the row in a form of a dictionary whose keys are the column names. <code>msg.selected</code> is set to <code>True</code> if the row was selected and to <code>False</code> if the row was de-selected. Both selection and de-selection fire the same rowSelected event and <code>msg.selected</code> can be used to distinguish between them. </p>
+<p>The index of the row for which the selection or de-selection occurred is found in <code>msg.rowIndex</code>. If the same row that was previously selected is deselected, <code>row_data_div</code> content is set to the empty string.</p>
+<h2 id="example-2">Example 2</h2>
+<p>This previous example is not very interesting. Let's change it to display a chart of the selected row instead.</p>
+<pre><code class="language-python">import justpy as jp
+import pandas as pd
+
+wm_df = pd.read_csv('https://elimintz.github.io/women_majors.csv').round(2)
+
+def row_selected(self, msg):
+    print(msg)
+    if msg.selected:
+        categories, values = list(msg.data.keys()), list(msg.data.values())
+        o = self.row_chart.options
+        o.title.text = f'{values[0]} - Percent Women in Major'
+        o.xAxis.categories = categories[1:]
+        s = jp.Dict({'name': values[0], 'data': values[1:]})
+        s.dataLabels.enabled = True
+        if len(o.series) &gt; 0:
+            o.series[0] = s
+        else:
+            o.series.append(s)
+        self.row_selected = msg.rowIndex
+        self.row_chart.show = True
+    elif self.row_selected == msg.rowIndex:
+        self.row_chart.show = False
+
+def grid_test():
+    wp = jp.WebPage()
+    row_chart = jp.HighCharts(a=wp)
+    row_chart.options.chart.type = 'column'
+    row_chart.options.yAxis.title.text = '%'
+    row_chart.show = False
+    grid = wm_df.jp.ag_grid(a=wp)
+    grid.row_chart = row_chart
+    grid.on('rowSelected', row_selected)
+    grid.options.columnDefs[0].checkboxSelection = True
+    return wp
+
+jp.justpy(grid_test)
+</code></pre>
+<p>The chart is created once when the page is requested, but the first and only series in it is changed to reflect the new values once a row is selected.</p>
+<h2 id="example-3-multiple-row-selection">Example 3 - Multiple Row Selection</h2>
+<pre><code class="language-python">import justpy as jp
+
+grid_options = &quot;&quot;&quot;
+{
+    rowSelection: 'multiple',
+    defaultColDef: {
+        filter: true,
+        sortable: true,
+        resizable: true,
+        cellStyle: {textAlign: 'center'},
+        headerClass: 'font-bold'
+    }, 
+      columnDefs: [
+      {headerName: &quot;Make&quot;, field: &quot;make&quot;},
+      {headerName: &quot;Model&quot;, field: &quot;model&quot;},
+      {headerName: &quot;Price&quot;, field: &quot;price&quot;}
+    ],
+      rowData: [
+      {make: &quot;Toyota&quot;, model: &quot;Celica&quot;, price: 35000},
+      {make: &quot;Ford&quot;, model: &quot;Mondeo&quot;, price: 32000},
+      {make: &quot;Porsche&quot;, model: &quot;Boxter&quot;, price: 72000}
+    ]
+}
+&quot;&quot;&quot;
+
+def row_selected(self, msg):
+    print(msg.selected, msg)
+    wp = msg.page
+    if msg.selected:
+        wp.selected_rows[msg.rowIndex] = msg.data
+    else:
+        wp.selected_rows.pop(msg.rowIndex)
+    s = f'Selected rows {sorted(list(wp.selected_rows.keys()))}'
+    for i in sorted(wp.selected_rows):
+        s = f'{s}\n Row {i}  Data: {wp.selected_rows[i]}'
+    if wp.selected_rows:
+        wp.rows_div.text = s
+    else:
+        wp.rows_div.text = 'No row selected'
+
+
+def grid_test():
+    wp = jp.WebPage()
+    wp.selected_rows = {}  # Dictionary holding selected rows
+    grid = jp.AgGrid(a=wp, options=grid_options, style='height: 200px; width: 300px; margin: 0.25em')
+    grid.options.columnDefs[0].checkboxSelection = True
+    grid.on('rowSelected', row_selected)
+    wp.rows_div = jp.Pre(text='Data will go here when you select rows', classes='border text-lg', a=wp)
+    return wp
+
+jp.justpy(grid_test)
+</code></pre>
+<h2 id="event-properties">Event Properties</h2>
+<p>Ag-Grid supports many <a href="https://www.ag-grid.com/javascript-grid-events/">events</a>. All the events supported by the community version can be captured and acted upon using JustPy. Each event contains different properties most of which JustPy makes available to the event handler through its second argument (<code>msg</code> in the tutorial).  </p>
+<p>A simple way to see which properties are available is to print <code>msg</code>. Another way is to go <a href="https://www.ag-grid.com/javascript-grid-events/#properties-and-hierarchy">here</a>.</p>
+<p>In the case of an event being one of <code>['sortChanged', 'filterChanged', 'columnMoved', 'rowDragEnd']</code> all the data in the gird after sorting and filtering is put into <code>msg.data</code> in CSV format.</p>
+<p>!!! warning
+    When working with websockets, the size of each message is limited to 1 MByte when using uvicorn, so if your tables are larger, use Ajax by setting the <code>websockets</code> key word argument of the <code>justpy</code> command to <code>False</code>.</p>
+<h2 id="linking-a-chart-and-a-grid-using-grid-events">Linking a chart and a grid using grid events</h2>
+<p>Using grid events, it requires a few lines of code to link a grid to a chart. Filtering and sorting changes in the grid, will be reflected in the chart.</p>
+<pre><code class="language-python">import justpy as jp
+import pandas as pd
+
+df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv', encoding=&quot;ISO-8859-1&quot;)
+
+def grid_change(self, msg):
+    msg.page.df = jp.read_csv_from_string(msg.data)
+    c = msg.page.df.jp.plot(0, [1,2,3,4], kind='column', classes='m-2 p-2 w-2/3 border', title='Alcohol Consumption per Country')
+    msg.page.c.options = c.options
+
+def grid_test():
+    wp = jp.WebPage()
+    wp.df = df
+    wp.c = df.jp.plot(0, [1,2,3,4], kind='column', a=wp, classes='m-2 p-2 border', title='Alcohol Consumption per Country')
+    grid = df.jp.ag_grid(a=wp)
+    for event_name in ['sortChanged', 'filterChanged', 'columnMoved', 'rowDragEnd']:
+        grid.on(event_name, grid_change)
+    return wp
+
+jp.justpy(grid_test)
+</code></pre>
+<h2 id="create-a-component-to-link-chart-and-grid">Create a Component to Link Chart and Grid</h2>
+<p>The example above can be simplified even further by creating a component in which a chart and a grid are linked. With the new component in hand, charts and grids can be linked with one line of code.</p>
+<pre><code class="language-python">import justpy as jp
+import pandas as pd
+
+class LinkedChartGrid(jp.Div):
+
+    def __init__(self, df, x, y, **kwargs):
+        super().__init__(**kwargs)
+        self.df = df
+        self.x = x
+        self.y = y
+        self.kind = kwargs.get('kind', 'column')
+        self.stacking = kwargs.get('stacking', '')
+        self.title = kwargs.get('title', '')
+        self.subtitle = kwargs.get('subtitle', '')
+        self.set_classes('flex flex-col')
+        self.chart = df.jp.plot(x, y, a=self, classes='m-2 p-2 border', kind=self.kind, stacking=self.stacking, title=self.title, subtitle=self.subtitle)
+        self.grid = df.jp.ag_grid(a=self)
+        self.grid.parent = self
+        for event_name in ['sortChanged', 'filterChanged', 'columnMoved', 'rowDragEnd']:
+            self.grid.on(event_name, self.grid_change)
+
+
+    @staticmethod
+    def grid_change(self, msg):
+        self.parent.df = jp.read_csv_from_string(msg.data)
+        c = self.parent.df.jp.plot(self.parent.x, self.parent.y, kind=self.parent.kind, title=self.parent.title,
+                                   subtitle=self.parent.subtitle, stacking=self.parent.stacking)
+        self.parent.chart.options = c.options
+
+
+
+alcohol_df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/alcohol-consumption/drinks.csv', encoding=&quot;ISO-8859-1&quot;)
+bad_drivers_df = pd.read_csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/bad-drivers/bad-drivers.csv', encoding=&quot;ISO-8859-1&quot;)
+
+
+def grid_test():
+    wp = jp.WebPage()
+    c = LinkedChartGrid(alcohol_df, 0, [1,2,3,4], kind='column', a=wp, classes='m-4 p-2 border',
+                        stacking='normal', title='Alcohol Consumption per Country', subtitle='538 data')
+    LinkedChartGrid(bad_drivers_df, 0, [1,2,3,4,5,6,7], kind='column', a=wp, classes='m-4 p-2 border-4', title='Bad Drivers per US State', subtitle='538 data')
+    return wp
+
+jp.justpy(grid_test)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

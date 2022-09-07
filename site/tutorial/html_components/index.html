@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>HTML Components - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../handling_events/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../input/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#html-components" class="nav-link">HTML Components</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#container-elements" class="nav-link">Container Elements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#common-attributes" class="nav-link">Common Attributes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#specific-attributes" class="nav-link">Specific Attributes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#html-links" class="nav-link">HTML Links</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#lists" class="nav-link">Lists</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#showing-and-hiding-elements" class="nav-link">Showing and Hiding Elements</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="html-components">HTML Components</h1>
+<p>JustPY supports components corresponding to HTML and SVG tags. The name of the component is the same as the name of the HTML tag with the first letter capitalized. For example, we already saw the <code>Div</code> and <code>P</code> components that correspond to the the <code>div</code> and <code>p</code> HTML tags. JustPy supports all tags that put elements on the page and are not deprecated in HTML 5. </p>
+<p>Here is a simple example with three HTML components. </p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    jp.I(text='Text in Italic', a=wp)
+    jp.Br(a=wp)
+    jp.Strong(text='Text in the Strong element', a=wp)
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<ul>
+<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i">i</a> HTML tag displays text typically in italics. </li>
+<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">br</a> HTML tag produces a line break. </li>
+<li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong">strong</a> HTML tag is typically rendered in bold type. </li>
+</ul>
+<p>The JustPy function <code>get_tag</code>, creates an instance of a component based on the HTML tag. Its first argument is a string with the tag and the rest of the arguments are the identical optional keyword arguments for the class <code>__init__</code> method. The program below is equivalent to the one above:</p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    jp.get_tag('i', text='Text in Italic', a=wp)
+    jp.get_tag('br',a=wp)
+    jp.get_tag('br',a=wp)
+    jp.get_tag('br',a=wp)
+    jp.get_tag('br',a=wp)
+    jp.get_tag('strong', text='Text in the Strong element', a=wp)
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<p>It is also possible to get the same formatting using the the <code>Div</code> component with the appropriate Tailwind classes:</p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    jp.Div(text='Text in italic', a=wp, classes='italic')
+    jp.Div(text='Text in bold', a=wp, classes='font-bold')
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<p>If you do not need the semantic information the specialized tags provide, it is more convenient to use <code>Div</code>, <code>P</code>, or <code>Span</code> with the appropriate Tailwind classes or style attribute.</p>
+<h2 id="container-elements">Container Elements</h2>
+<p>Many HTML elements can have children elements. In JustPy parlance, an element can contain other elements.</p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    for i in range(10):
+        d = jp.Div(a=wp, classes='m-2')
+        for j in range(10):
+            jp.Span(text=f'Span #{j+1} in Div #{i+1}', a=d, classes='text-white bg-blue-700 hover:bg-blue-200 ml-1 p-1')
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<p>In the program above, in each iteration of the outer loop a new <code>Div</code> element is created and in the inner loop, ten <code>Span</code> elements are added to it. This is done using the <code>a=d</code> keyword argument.</p>
+<p>Change the element created in the inner loop from a <code>Span</code> to a <code>Div</code>, <code>P</code>, or <code>I</code> and see what happens.</p>
+<h2 id="common-attributes">Common Attributes</h2>
+<p>HTML components have common attributes as well as specific ones. JustPy components support the following <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global attributes</a> for all HTML components:
+<code>contenteditable</code>, <code>dir</code>, <code>tabindex</code>, <code>title</code>, <code>accesskey</code>, <code>draggable</code>, <code>lang</code>, <code>hidden</code></p>
+<p>In this example we use the <code>contenteditable</code>, <code>dir</code>, and <code>lang</code> attributes:</p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    for j in range(10):
+        p = jp.P(text=f'אני אוהב לתכנת בפייתון', a=wp, contenteditable=True, classes='text-white bg-blue-500 hover:bg-blue-700 ml-1 p-1 w-1/2')
+        p.dir = 'rtl'
+        p.lang = 'he'
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<p>The text in each P element is made editable by setting <code>contenteditable</code> to <code>True</code> (using a keyword argument). We set <code>dir</code> to "rtl" (right-to-left) and <code>lang</code> to "he" (the language code for Hebrew). We do so by setting the attribute directly though we could have used a keyword argument.</p>
+<p>Run the program and try editing some text. You will see also that the Hebrew text is rendered right to left.</p>
+<h2 id="specific-attributes">Specific Attributes</h2>
+<p>Some components have specific attributes. For example, the   <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">img HTML tag</a> has the <code>src</code> attribute that specifies the URL for the image.
+Run the following program:</p>
+<pre><code class="language-python">import justpy as jp
+
+def html_comps():
+    wp = jp.WebPage()
+    for degree in range(0, 361, 10):
+        image = jp.Img(src='https://www.python.org/static/community_logos/python-powered-h-140x182.png', a=wp)
+        image.classes = 'm-4 p-4 inline-block'
+        image.style = f'transform: rotate({degree}deg)'
+        image.height = 100
+        image.width = 100
+        image.degree = degree
+
+        def straighten(self, msg):
+            self.style = f'transform: rotate(0deg)'
+
+        def rotate_back(self, msg):
+            self.style = f'transform: rotate({self.degree}deg)'
+
+        def no_rotate(self, msg):
+            self.degree = 0
+            self.set_class('bg-red-200')
+
+        image.on('mouseenter', straighten)
+        image.on('mouseleave', rotate_back)
+        image.on('click', no_rotate)
+
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<p>The program renders on the page a progression of images of the <strong>Python Powered</strong> logo each rotated 10 degrees relative to the former image. When the mouse enters an image, it "straightens" and when it leaves, it returns to its original rotation. If you click on an image, it does not rotate anymore.</p>
+<p>The images are added inside a loop. In each iteration of the loop, an image is added to the page. The <code>src</code> attribute designates where to fetch the image from, in our case the <a href="https://www.python.org">python.org</a> website. As you see in this example, you can combine Tailwind classes (or any CSS classes) with setting the <code>style</code> attribute. Here, the style is set to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate">rotate</a> the image based on the loop variable. We also set the height and width attributes of the image to 100.</p>
+<p>The program then sets the <code>degree</code> attribute of the image to the loop variable. It will be used in the event handlers that define the interaction with the mouse. </p>
+<p>!!! note
+    <code>degree</code> is a different kind of attribute than <code>src</code>, <code>height</code>, and <code>width</code>. It is a user defined attribute that is not part of the HTML specification. In the JustPy component definitions, attributes that are part of the HTML specification are explicitly identified and handled accordingly.</p>
+<p>The mouse event handlers change the <code>style</code> and <code>class</code> attributes of the element as needed using the <code>degree</code> attribute of the image if required. For clarity, the event handlers are defined inside the loop, but they could be defined just once outside the loop or outside the request handler. We could also set the attributes as keyword arguments and the result is the following:</p>
+<pre><code class="language-python">import justpy as jp
+
+def straighten(self, msg):
+    self.style = f'transform: rotate(0deg)'
+
+def rotate_back(self, msg):
+    self.style = f'transform: rotate({self.degree}deg)'
+
+def no_rotate(self, msg):
+    self.degree = 0
+    self.set_class('bg-red-200')
+
+def html_comps():
+    wp = jp.WebPage()
+    for degree in range(0, 361, 10):
+        jp.Img(src='https://www.python.org/static/community_logos/python-powered-h-140x182.png', a=wp,
+                classes='m-4 p-4 inline-block', style=f'transform: rotate({degree}deg)', height=100, width=100,
+                degree=degree, mouseenter=straighten, mouseleave=rotate_back, click=no_rotate)
+    return wp
+
+jp.justpy(html_comps)
+</code></pre>
+<h2 id="html-links">HTML Links</h2>
+<p>In JustPy you create hyperlinks using the <code>A</code> component which corresponds to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>a</code> HTML tag</a>.</p>
+<p>The <code>A</code> component is also named <code>Link</code> (in case you want to use a more descriptive name).</p>
+<pre><code class="language-python">import justpy as jp
+
+def link_demo():
+    wp = jp.WebPage()
+    jp.A(text='Python Org', href='https://python.org', a=wp, classes='m-2 p-2 text-xl text-white bg-blue-500 hover:bg-blue-700')
+    return wp
+
+jp.justpy(link_demo)
+
+</code></pre>
+<p>The link above goes to the Python.org web page. If you want the link to open in a new window, set the <code>target</code> attribute of the <code>A</code> component instance to '_blank' </p>
+<p>If you want to link to an element on the page, use the <code>bookmark</code> attribute and assign to it the element you want to link to. If you want to scroll to the element, instead of jumping instantly, set the <code>scroll</code> attribute to <code>True</code>. </p>
+<pre><code class="language-python">import justpy as jp
+
+def link_demo():
+    wp = jp.WebPage()
+    link = jp.A(text='Scroll to target', a=wp, classes='inline-block m-2 p-2 text-xl text-white bg-blue-500 hover:bg-blue-700')
+    # jp.Br(a=wp)
+    for i in range(50):
+        jp.P(text=f'{i+1} Not a target', classes='m-1 p-1 text-white bg-blue-300', a=wp)
+    target = jp.A(text=f'This is the target - it is linked to first link, click to jump there', classes='inline-block m-1 p-1 text-white bg-red-500', a=wp)
+    link.bookmark = target
+    link.scroll = True
+    target.bookmark = link
+    for i in range(50):
+        jp.P(text=f'{i+50} Not a target', classes='m-1 p-1 text-white bg-blue-300', a=wp)
+    return wp
+
+jp.justpy(link_demo)
+</code></pre>
+<h2 id="lists">Lists</h2>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">ul tag</a> together with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul">li tag</a> can be used to create lists. The corresponding JustPy components are <code>Ul</code> and <code>Li</code>.</p>
+<pre><code class="language-python">import justpy as jp
+
+def list_demo():
+    wp = jp.WebPage()
+    my_list = jp.Ul(a=wp, classes='m-2 p-2')
+    for i in range (1,11):
+        jp.Li(text=f'List one item {i}', a=my_list)
+    my_list = jp.Ul(a=wp, classes='m-2 p-2 list-disc list-inside')
+    for i in range(1, 11):
+        jp.Li(text=f'List two item {i}', a=my_list, classes='hover:bg-gray-200')
+    my_list = jp.Ul(a=wp, classes='m-2 p-2 list-decimal list-inside')
+    for i in range(1, 11):
+        jp.Li(text=f'List three item {i}', a=my_list)
+    return wp
+
+jp.justpy(list_demo)
+</code></pre>
+<p>The program above creates three lists. Use the <a href="https://tailwindcss.com/docs/list-style-type"><code>list-disc</code> and <code>list-decimal</code></a> Tailwind classes to get bulleted or numeric lists. The <a href="https://tailwindcss.com/docs/list-style-position"><code>list-inside</code></a> class controls the positions of the markers of the list. If you choose to put them outside, make sure there is enough room to render them.</p>
+<h2 id="showing-and-hiding-elements">Showing and Hiding Elements</h2>
+<p>All JustPy components use the <code>show</code> boolean attribute to determine whether an element should be rendered on the page. If <code>show</code> is <code>False</code>, the element will not be on the page at all.</p>
+<p>If you want the element to be on the page, but be invisible, use the <code>visible</code> and <code>invisible</code> Tailwind classes (or appropriate <code>style</code> values). When an element is invisible, the page structure stays the same.</p>
+<p>Run the following program and see the difference by clicking both buttons.</p>
+<pre><code class="language-python">import justpy as jp
+
+button_classes='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+
+def show_demo():
+    wp = jp.WebPage()
+    b = jp.Button(text='Click to toggle show', a=wp, classes=button_classes)
+    d = jp.Div(text='Toggled by show', classes='m-2 p-2 text-2xl border w-48', a=wp)
+    b.d = d
+    jp.Div(text='Will always show', classes='m-2', a=wp)
+
+    def toggle_show(self, msg):
+        self.d.show = not self.d.show
+
+    b.on('click', toggle_show)
+
+    b = jp.Button(text='Click to toggle visibility', a=wp, classes=button_classes)
+    d = jp.Div(text='Toggled by visible', classes='m-2 p-2 text-2xl border w-48', a=wp)
+    d.visibility_state = 'visible'
+    b.d = d
+    jp.Div(text='Will always show', classes='m-2', a=wp)
+
+    def toggle_visible(self, msg):
+        if self.d.visibility_state == 'visible':
+            self.d.set_class('invisible')
+            self.d.visibility_state = 'invisible'
+        else:
+            self.d.set_class('visible')
+            self.d.visibility_state = 'visible'
+
+    b.on('click', toggle_visible)
+    return wp
+
+jp.justpy(show_demo)
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

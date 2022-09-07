@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Advanced Components - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../reference/configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/htmlcomponent/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../../reference/webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../../reference/webpage/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../ajax/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#advanced-components" class="nav-link">Advanced Components</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-components-directory" class="nav-link">The Components Directory</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#python" class="nav-link">Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#vuejs-component" class="nav-link">Vue.js Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#fullcalendar-example" class="nav-link">FullCalendar Example</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="advanced-components">Advanced Components</h1>
+<p>!!! warning
+    Work in progress. The example works but requires much more elucidation</p>
+<h2 id="introduction">Introduction</h2>
+<p>In most cases, components can be defined using Python only as previously described in this tutorial. In some cases however, in parallel to the Python definition, a Vue.js component also needs to be created.</p>
+<p>In this chapter, we will create a signing pad component based on <a href="https://github.com/szimek/signature_pad">signature_pad</a></p>
+<p>!!! info
+    If you are not familiar with Vue.js, this chapter will not be very useful to you.</p>
+<h2 id="the-components-directory">The Components Directory</h2>
+<p>Under your applications <a href="https://justpy.io/tutorial/static/">static</a> directory (the default is the directory the application is run form) create another directory called <code>components</code>. Put the your JavaScript component definition there. Files must all have the extension <code>.js</code>.</p>
+<p>The application will load these files automatically. </p>
+<h2 id="python">Python</h2>
+<pre><code class="language-python">import justpy as jp
+
+class SignaturePad(jp.JustpyBaseComponent):
+
+    vue_type = 'signaturepad'
+
+    def __init__(self, **kwargs):
+
+        self.options = jp.Dict()
+        self.classes = ''
+        self.style = ''
+        self.width = 400
+        self.height = 200
+        self.clear = False
+        self.show = True
+        self.event_propagation = True
+        self.pages = {}
+        kwargs['temp'] = False  # Force an id to be assigned to pad
+        super().__init__(**kwargs)
+        self.allowed_events = ['onEnd', 'onBegin']
+        if type(self.options) != jp.Dict:
+            self.options = jp.Dict(self.options)
+        self.initialize(**kwargs)
+
+
+    def add_to_page(self, wp: jp.WebPage):
+        wp.add_component(self)
+
+    def react(self, data):
+        pass
+
+
+    def convert_object_to_dict(self):
+        d = {}
+        d['vue_type'] = self.vue_type
+        d['id'] = self.id
+        d['show'] = self.show
+        d['classes'] = self.classes
+        d['style'] = self.style
+        d['event_propagation'] = self.event_propagation
+        d['def'] = self.options
+        d['events'] = self.events
+        d['width'] = self.width
+        d['height'] = self.height
+        d['clear'] = self.clear
+        d['options'] = self.options
+        return d
+
+
+def my_end(self, msg):
+    print(msg)
+    self.data = msg.data
+
+async def clear_pad(self, msg):
+    self.pad.clear = True
+    await msg.page.update()
+    self.pad.clear = False
+    return True
+
+
+def pad_test():
+    wp = jp.WebPage()
+    wp.head_html = '&lt;script src=&quot;https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js&quot;&gt;&lt;/script&gt;'
+    pad = SignaturePad(a=wp, style = 'background-color: white; border: 1px solid;', classes='m-2', onEnd=my_end)
+    pad.options = {'penColor': 'blue'}
+    clear_btn = jp.Button(text='Clear Pad', classes=jp.Styles.button_simple + ' m-2', a=wp, click=clear_pad)
+    clear_btn.pad = pad
+    return wp
+
+jp.justpy(pad_test)
+</code></pre>
+<h2 id="vuejs-component">Vue.js Component</h2>
+<pre><code class="language-javascript">var signature_pads = {};
+    Vue.component('signaturepad', {
+        template:
+            `&lt;canvas  v-bind:id=&quot;jp_props.id&quot; :class=&quot;jp_props.classes&quot;  :style=&quot;jp_props.style&quot; :width=&quot;jp_props.width&quot; height=&quot;jp_props.height&quot;&gt;&lt;/canvas&gt;`,
+        methods: {
+            pad_change() {
+                var id = this.$props.jp_props.id.toString();
+                var canvas = document.getElementById(id);
+                var signaturePad = new SignaturePad(canvas, this.$props.jp_props.options);
+                signature_pads[id] = signaturePad;
+                var events = this.$props.jp_props.events;
+                var props = this.$props;
+
+                function onEnd() {
+                    if (events.includes('onEnd')) {
+                        var data = signaturePad.toDataURL('image/png');
+                        var point_data = signaturePad.toData();
+                        var e = {
+                            'event_type': 'onEnd',
+                            'id': props.jp_props.id,
+                            'class_name': props.jp_props.class_name,
+                            'html_tag': props.jp_props.html_tag,
+                            'vue_type': props.jp_props.vue_type,
+                            'page_id': page_id,
+                            'websocket_id': websocket_id,
+                            'data': data,
+                            'point_data': point_data
+                        };
+                        send_to_server(e, 'event');
+                    }
+                }
+
+                signaturePad.onEnd = onEnd;
+
+            }
+        },
+        mounted() {
+            this.pad_change();
+        },
+        updated() {
+
+            if (this.$props.jp_props.clear) {
+                signature_pads[this.$props.jp_props.id.toString()].clear();
+            }
+        },
+        props: {
+            jp_props: Object
+        }
+    });
+
+</code></pre>
+<h2 id="fullcalendar-example">FullCalendar Example</h2>
+<p><a href="https://fullcalendar.io/">FullCalendar</a> is a full featured JavaScript Calendar</p>
+<p>The following implementation does not support all the features and events but is a sound basis to build on.</p>
+<p>Python file:</p>
+<pre><code class="language-python">import justpy as jp
+
+
+class FullCalendar(jp.JustpyBaseComponent):
+    vue_type = 'fullcalendar'
+
+    def __init__(self, **kwargs):
+        self.options = jp.Dict()
+        self.classes = ''
+        self.style = ''
+        self.show = True
+        self.event_propagation = True
+        self.pages = {}
+        kwargs['temp'] = False  # Force an id to be assigned
+        super().__init__(**kwargs)
+        self.allowed_events = ['eventClick', 'eventDrop']
+        if type(self.options) != jp.Dict:
+            self.options = jp.Dict(self.options)
+        self.initialize(**kwargs)
+
+    def add_to_page(self, wp: jp.WebPage):
+        wp.add_component(self)
+
+    def react(self, data):
+        pass
+
+    async def run_method(self, command, websocket):
+        await websocket.send_json({'type': 'run_method', 'data': command, 'id': self.id})
+        # So the page itself does not update, return True not None
+        return True
+
+    def convert_object_to_dict(self):
+        d = {}
+        d['vue_type'] = self.vue_type
+        d['id'] = self.id
+        d['show'] = self.show
+        d['classes'] = self.classes
+        d['style'] = self.style
+        d['event_propagation'] = self.event_propagation
+        d['events'] = self.events
+        d['options'] = self.options
+        return d
+
+
+calendar_options = {
+    'plugins': ['dayGrid', 'interaction'],
+    'editable': True,
+    'header': {'left': '',
+               'center': 'title',
+               'right': 'today prev,next'},
+    'defaultDate': '2020-05-15',
+    'events': [
+        {
+            'title': 'This is an event',
+            'start': '2020-05-02',
+            'end': '2020-05-12',
+            'color': 'red',
+            'editable': True
+        },
+        {
+            'title': 'event with a URL',
+            'url': 'https://www.google.com/',
+            'start': '2020-05-03'
+        }
+    ]
+}
+# https://fullcalendar.io/docs/plugin-index
+head_html = &quot;&quot;&quot;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@fullcalendar/core@4.4.0/main.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/@fullcalendar/daygrid@4.4.0/main.min.css&quot;&gt;
+&lt;script src=&quot;https://unpkg.com/@fullcalendar/core@4.4.0/main.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@fullcalendar/daygrid@4.4.0/main.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@fullcalendar/interaction@4.4.0/main.min.js&quot;&gt;&lt;/script&gt;
+&quot;&quot;&quot;
+
+async def add_event(self, msg):
+    print(msg)
+    self.calendar.options['events'].append({'title': 'Very new event', 'start': '2020-05-02', 'end': '2020-05-05', 'color': 'green', 'editable': True})
+
+def event_click(self, msg):
+    print(msg)
+
+def event_drop(self, msg):
+    print(msg)
+    print(msg.all_events)
+    self.options['events'] = msg.all_events
+
+def calendar_test():
+    wp = jp.QuasarPage()
+    wp.head_html = head_html
+    calendar = FullCalendar(a=wp, classes='q-ma-lg', style='width: 700px;')
+    calendar.options = calendar_options
+    calendar.on('eventClick', event_click)
+    calendar.on('eventDrop', event_drop)
+    b = jp.QBtn(label='Add Event', a=wp, classes='q-ma-lg', click=add_event)
+    b.calendar = calendar
+    return wp
+
+
+jp.justpy(calendar_test)
+
+</code></pre>
+<p>Vue.js component:</p>
+<pre><code class="language-javascript">var full_calendars = {};
+Vue.component('fullcalendar', {
+    template:
+        `&lt;div  v-bind:id=&quot;jp_props.id&quot; :class=&quot;jp_props.classes&quot;  :style=&quot;jp_props.style&quot; &gt;&lt;/div&gt;`,
+
+    methods: {
+        get_all_events(calendar) {
+            let all_events = [];
+            for (let event_obj of calendar.getEvents()) {
+                all_events.push(this.create_object_from_event(event_obj))
+            }
+            return all_events;
+        },
+        create_object_from_event(event_obj) {
+            // https://fullcalendar.io/docs/event-object
+            const event_properties = ['id', 'groupId', 'allDay', 'start', 'end', 'title', 'url', 'classNames',
+                'editable', 'startEditable', 'durationEditable', 'resourceEditable', 'rendering', 'overlap',
+                'constraint', 'backgroundColor', 'borderColor', 'textColor', 'extendedProps'];
+            let event_data = {};
+            for (let i of event_properties) {
+                event_data[i] =event_obj[i];
+            }
+            return event_data;
+        },
+        calendar_change() {
+            var id = this.$props.jp_props.id.toString();
+            var events = this.$props.jp_props.events;
+            var props = this.$props;
+            var calendarEl = document.getElementById(id);
+            var calendar = new FullCalendar.Calendar(calendarEl, this.$props.jp_props.options);
+            const parent_comp = this;
+            if (events.includes('eventClick'))
+                // https://fullcalendar.io/docs/eventClick
+                calendar.on('eventClick', function (info) {
+                    var e = {
+                        'event_type': 'eventClick',
+                        'id': props.jp_props.id,
+                        'class_name': props.jp_props.class_name,
+                        'html_tag': props.jp_props.html_tag,
+                        'vue_type': props.jp_props.vue_type,
+                        'page_id': page_id,
+                        'websocket_id': websocket_id,
+                        'event_data': parent_comp.create_object_from_event(info.event),
+                        'all_events': parent_comp.get_all_events(calendar)
+                    };
+                    send_to_server(e, 'event');
+                });
+
+            if (events.includes('eventDrop'))
+                // https://fullcalendar.io/docs/eventDrop
+                calendar.on('eventDrop', function (info) {
+                    var e = {
+                        'event_type': 'eventDrop',
+                        'id': props.jp_props.id,
+                        'class_name': props.jp_props.class_name,
+                        'html_tag': props.jp_props.html_tag,
+                        'vue_type': props.jp_props.vue_type,
+                        'page_id': page_id,
+                        'websocket_id': websocket_id,
+                        'event_data': parent_comp.create_object_from_event(info.event),
+                        'old_event_data': parent_comp.create_object_from_event(info.oldEvent),
+                        'delta': info.delta,
+                        'all_events': parent_comp.get_all_events(calendar)
+                    };
+                    send_to_server(e, 'event');
+                });
+            full_calendars[id] = calendar;
+            comp_dict[this.$props.jp_props.id] = calendar;
+
+            calendar.render();
+        },
+
+    },
+
+    mounted() {
+        this.calendar_change();
+    },
+    updated() {
+        var calendar = comp_dict[this.$props.jp_props.id];
+        calendar.destroy();
+        this.calendar_change();
+
+    },
+    props: {
+        jp_props: Object
+    }
+});
+
+
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

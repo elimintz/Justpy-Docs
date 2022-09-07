@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>HTML Components - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">JustPy</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../blog/ag-grid_to_web_page/" class="dropdown-item">From a Pandas DataFrame to a Web Site with an ag-Grid in 10 Lines of Python</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/reactivity/" class="dropdown-item">Reactivity in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_comparison/" class="dropdown-item">Comparing Vue.js to JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../blog/vue_examples/" class="dropdown-item">JustPy Implementation of Vue.js Examples</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Charts tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_components/" class="dropdown-item">Chart Custom Components</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/chart_events/" class="dropdown-item">Chart Events and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/creating_charts/" class="dropdown-item">Creating Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/introduction/" class="dropdown-item">Highcharts Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/iris/" class="dropdown-item">Iris Flower Dataset Visualization</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/stock_charts/" class="dropdown-item">Stock Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/tooltips/" class="dropdown-item">Tooltips</a>
+</li>
+                                    
+<li>
+    <a href="../../charts_tutorial/updating_charts/" class="dropdown-item">Updating Charts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Grids tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../grids_tutorial/adding_html/" class="dropdown-item">Adding HTML to Cells</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/checkbox/" class="dropdown-item">Rendering Checkboxes</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/context_menu/" class="dropdown-item">Adding a Context Menu</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/creating_grids/" class="dropdown-item">Creating Grids</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/database/" class="dropdown-item">Displaying Database Tables and Query Results</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/field_evaluation/" class="dropdown-item">Evaluating Fields using JavaScript</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_api/" class="dropdown-item">Running Grid API Commands</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/grid_events/" class="dropdown-item">Grid Events</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/introduction/" class="dropdown-item">ag-Grid Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../grids_tutorial/pandas/" class="dropdown-item">Using Pandas to Create Grids</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">How to <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../how_to/add_row_to_grid/" class="dropdown-item">How to Add a Row to a Grid</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/change_font/" class="dropdown-item">Using Specific Fonts</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/context_menu/" class="dropdown-item">Addiing a Context Menu (right-click in browser)</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/create_select/" class="dropdown-item">How to use the Select HTML Tag</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/login_decorator/" class="dropdown-item">Use Decorators for Request Handlers</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/monitor_idle/" class="dropdown-item">Monitor Inactivity</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/play_audio/" class="dropdown-item">How to Play Audio</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/quasar_full_screen/" class="dropdown-item">How ot Toggle Full Screen Mode in Quasar</a>
+</li>
+                                    
+<li>
+    <a href="../../how_to/reload_pages/" class="dropdown-item">Forcing a Hard Reload</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Meadows <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../meadows/general/" class="dropdown-item">General Thoughts</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Quasar tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../quasar_tutorial/QAjaxBar/" class="dropdown-item">QAjaxBar</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QBtnToggle/" class="dropdown-item">QBtnToggle</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QColor/" class="dropdown-item">QColor</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDate/" class="dropdown-item">QDate and QTime</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QDialog/" class="dropdown-item">QDialog</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QExpansionItem/" class="dropdown-item">QExpansionItem Examples</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QInput/" class="dropdown-item">QInput</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QList/" class="dropdown-item">QList and QItem</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QOptionGroup/" class="dropdown-item">QOptionGroup</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QRating/" class="dropdown-item">QRating</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QSplitter/" class="dropdown-item">QSplitter</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/QTree/" class="dropdown-item">QTree</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/introduction/" class="dropdown-item">Quasar Introduction</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/not_working/" class="dropdown-item">Components not Working</a>
+</li>
+                                    
+<li>
+    <a href="../../quasar_tutorial/notify/" class="dropdown-item">Notifications</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Reference <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../configuration/" class="dropdown-item">Configuration Variables</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../justpy/" class="dropdown-item">The **justpy** Command</a>
+</li>
+                                    
+<li>
+    <a href="../notes/" class="dropdown-item">Notes</a>
+</li>
+                                    
+<li>
+    <a href="../webpage/" class="dropdown-item">The WebPage Class</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorial <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../tutorial/advanced_components/" class="dropdown-item">Advanced Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/ajax/" class="dropdown-item">Using Ajax instead of WebSockets</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/altair/" class="dropdown-item">Altair Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/basic_concepts/" class="dropdown-item">The Basic Concepts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/before_after_events/" class="dropdown-item">The <span style="color: red">before</span> and <span style="color: red">after</span> Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/bokeh/" class="dropdown-item">Bokeh Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/configuration/" class="dropdown-item">Configuration</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/custom_components/" class="dropdown-item">Creating Your Own Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/deployment/" class="dropdown-item">Deployment</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/drag_and_drop/" class="dropdown-item">Drag and Drop</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/equations/" class="dropdown-item">Equations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/form/" class="dropdown-item">Form Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/getting_started/" class="dropdown-item">Getting Started</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/handling_events/" class="dropdown-item">Handling Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/html_components/" class="dropdown-item">HTML Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/input/" class="dropdown-item">Input Component</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/matplotlib/" class="dropdown-item">Creating matplotlib Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/model_and_data/" class="dropdown-item">The model and data Attributes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/page_events/" class="dropdown-item">Page Events</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/plotly/" class="dropdown-item">Plotly Charts</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pushing_data/" class="dropdown-item">Pushing Data to Web Pages</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/pydeck/" class="dropdown-item">Pydeck Visualizations</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/request_object/" class="dropdown-item">The Request Object</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/routes/" class="dropdown-item">Routes</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/sessions/" class="dropdown-item">Sessions in JustPy</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/static/" class="dropdown-item">Static Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/svg_components/" class="dropdown-item">SVG Components</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/tailwind/" class="dropdown-item">Tailwind</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/transitions/" class="dropdown-item">Transitions</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/uploading_files/" class="dropdown-item">Downloading and Uploading Files</a>
+</li>
+                                    
+<li>
+    <a href="../../tutorial/working_with_html/" class="dropdown-item">Parsing and Using HTML</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../configuration/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../justpy/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#html-components" class="nav-link">HTML Components</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#div-component" class="nav-link">Div Component</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="html-components">HTML Components</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In JustPy components are Python classes. All HTML components inherit from either the Div or Input component. The Input component itself inherits from the Div component. </p>
+<p>The reference will describe primarily the Div component and the Input component.</p>
+<p>!!! tip "It would be helpful to read the <a href="/tutorial/html_components">HTML Components</a> chapter in the tutorial first."</p>
+<h2 id="div-component">Div Component</h2>
+<h3 id="introduction_1">Introduction</h3>
+<p>The Div component is the basic container component of JustPy. It is a component that can contain other components. It can of course, contain components that themselves are container components.</p>
+<h3 id="attributes">Attributes</h3>
+<hr />
+<h4 id="general">General</h4>
+<p>Attributes can be set as keywords when an element is created.</p>
+<pre><code class="language-python">import justpy as jp
+
+jp.Div(text='hello', classes='text-red-500')
+</code></pre>
+<p>They can also be set anytime after the element is created (except for <code>delete_flag</code> which needs to be set at creation).</p>
+<pre><code class="language-python">import justpy as jp
+
+d = jp.Div()
+d.text = 'hello'
+d.classes= 'text-red-500'
+</code></pre>
+<h4 id="text">text</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>""</code>  (the empty string)</li>
+</ul>
+<p>The <code>text</code> attribute will always be rendered as the first child of the component. If you want a Div (or any container component) instance to render multiple texts in different locations, encompass the text in another container component and add that component to the Div at the location you want.</p>
+<p>If you want to render an <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">HTML Entity</a> use the HTMLEntity component or set the <code>html_enity</code> attribute to <code>True</code>.</p>
+<pre><code class="language-python">import justpy as jp
+
+def entity_test():
+    wp = jp.WebPage()
+    jp.Space(num=3, a=wp)
+    jp.HTMLEntity(entity='a&amp;#768;',a=wp, classes='text-lg')
+    jp.Span(text='a&amp;#768;',a=wp, classes='text-lg', html_entity=True)
+    jp.Space(num=5, a=wp)
+    jp.HTMLEntity(entity='a&amp;#769',a=wp, classes='text-xl')
+    jp.Span(text='a&amp;#769',a=wp, classes='text-xl', html_entity=True)
+    jp.Space(num=5, a=wp)
+    jp.HTMLEntity(entity='&amp;#8707;',a=wp, classes='text-2xl')
+    jp.Span(text='&amp;#8707;',a=wp, classes='text-2xl', html_entity=True)
+    jp.Space(num=5, a=wp)
+    jp.HTMLEntity(entity='&amp;copy;', a=wp, classes='text-3xl')
+    jp.Span(text='&amp;copy;', a=wp, classes='text-3xl', html_entity=True)
+    jp.Space(num=5, a=wp)
+    return wp
+
+jp.justpy(entity_test)
+</code></pre>
+<p>!!! info
+    The Space component can be used to insert spaces. It creates a Span with <code>num</code> repeats of the html entity '&amp;nbsp'.</p>
+<h4 id="classes">classes</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>""</code>  (the empty string)</li>
+</ul>
+<p>The classes to attach to the element. Usually Tailwind classes, but may be any classes you define. Basically equivalent to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class"><code>class</code></a> attribute of HTML tags.</p>
+<pre><code class="language-python">import justpy as jp
+
+def classes_test():
+    wp = jp.WebPage()
+    d = jp.Div(text='Classes Example', a=wp)
+    # Assign Tailwind classes to d
+    d.classes = 'text-5xl text-white bg-blue-500 hover:bg-blue-700 m-2 p-2 w-64'
+    return wp
+
+jp.justpy(classes_test)
+</code></pre>
+<h4 id="style">style</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>""</code>  (the empty string)</li>
+</ul>
+<p>The CSS to attach to the element. Basically equivalent to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/style"><code>style</code></a> attribute of HTML tags.</p>
+<pre><code class="language-python">import justpy as jp
+
+def style_test():
+    wp = jp.WebPage()
+    for size in range(1,101):
+        jp.Div(text=f' {size}', style=f'font-size: {size}px; color: red', a=wp, classes='inline cursor-pointer', size=size,
+               click='self.size *= 2; self.style=f&quot;font-size: {self.size}px; color: green&quot;;')
+    return wp
+
+jp.justpy(style_test)
+</code></pre>
+<h4 id="components">components</h4>
+<ul>
+<li>Type: <code>list</code></li>
+<li>Default: <code>[]</code></li>
+</ul>
+<p>Holds the list of child elements in the Div. Strictly speaking these are not components, they are elements, instances of components. When the Div is rendered, the elements are rendered according to their place on the list, starting with the first.</p>
+<p>In the following example, the Div elements will show up in a different order each time the page is loaded because <code>main_div.components</code> is shuffled.</p>
+<pre><code class="language-python">import justpy as jp
+import random
+
+def shuffle_test():
+    wp = jp.WebPage()
+    main_div = jp.Div(classes='flex flex-wrap m-2 p-2 ', a=wp)
+    for i in range(1,101,1):
+        jp.Div(text=f'Div {i}', a=main_div, classes='m-2 p-2 text-xl text-white bg-blue-500')
+    random.shuffle(main_div.components)
+    return wp
+
+
+jp.justpy(shuffle_test)
+</code></pre>
+<h4 id="events">events</h4>
+<ul>
+<li>Type: <code>list</code></li>
+<li>Default: <code>[]</code></li>
+</ul>
+<p>When an element is bound to an event, the event name (of type string) is added to <code>events</code>. You can use <code>events</code> to check which events the element will respond. Also, by removing an event name from the list, you will disable the element responding to that event.</p>
+<h4 id="allowed_events">allowed_events</h4>
+<ul>
+<li>Type: <code>list</code></li>
+<li>Default: <code>['click', 'mouseover', 'mouseout', 'mouseenter', 'mouseleave', 'input', 'change', 'after', 'before', 'keydown', 'keyup', 'keypress', 'focus', 'blur']</code></li>
+</ul>
+<p>If an event name is not in <code>allowed_events</code>, JustPy will generate an error if you try to bind to that event.
+You can use the <code>add_event</code> method to add an allowed event to the list.</p>
+<h4 id="additional_properties">additional_properties</h4>
+<ul>
+<li>Type: <code>list</code></li>
+<li>Default: <code>[]</code></li>
+</ul>
+<p>JustPy does not pass all the JavaScript event properties by default since in most cases they are not needed. If you need additional properties from the JavasScript event, use the <code>additional_properties</code> attribute. In the example below, more fields are added to <code>msg</code>.</p>
+<pre><code class="language-python">import justpy as jp
+
+def my_click(self, msg):
+    print(msg)
+    self.text = 'I was clicked'
+
+def event_demo():
+    wp = jp.WebPage()
+    wp.debug = True
+    d = jp.Div(text='Not clicked yet', a=wp, classes='w-48 text-xl m-2 p-1 bg-blue-500 text-white')
+    d.on('click', my_click)
+    d.additional_properties =['screenX', 'pageY','altKey','which','movementX','button', 'buttons']
+    return wp
+
+jp.justpy(event_demo)
+</code></pre>
+<h4 id="inner_html">inner_html</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>""</code>  (the empty string)</li>
+</ul>
+<p>Used to to set the HTML of an element directly.</p>
+<pre><code class="language-python">import justpy as jp
+
+def inner_html_test():
+    wp = jp.WebPage()
+    for i in range(1,11):
+        jp.Div(inner_html=f'&lt;span style=&quot;color: orange&quot;&gt;{i}) Hello!&lt;/span&gt;', a=wp, classes='m-2 p-2 text-3xl')
+    return wp
+
+jp.justpy(inner_html_test)
+</code></pre>
+<p>!!! warning "If <code>inner_html</code> is not the empty string, it will override any other content of the element"</p>
+<h4 id="show">show</h4>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>True</code></li>
+</ul>
+<p>If set to <code>False</code>, the element is not rendered. See <a href="/tutorial/html_components/#showing-and-hiding-elements">here</a></p>
+<h4 id="set_focus">set_focus</h4>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>False</code></li>
+</ul>
+<p>If set to <code>True</code>, the element will have focus when the page is rendered.</p>
+<p>!!! warning "If multiple elements have the <code>set_focus</code> attribute set to <code>True</code>, the results will be unpredictable. The last element to be rendered by Vue will have focus."</p>
+<pre><code class="language-python">import justpy as jp
+
+# Try not using this event handler and see what happens
+def my_blur(self, msg):
+        self.set_focus = False
+
+def focus_test():
+    wp = jp.WebPage()
+    in1 = jp.Input(classes=jp.Styles.input_classes, placeholder='Input 1', a=wp, blur=my_blur)
+    in2 = jp.Input(classes=jp.Styles.input_classes, placeholder='Input 2', a=wp, blur=my_blur)
+    in3 = jp.Input(classes=jp.Styles.input_classes, placeholder='Input 3', a=wp, blur=my_blur)
+    in4 = jp.Input(classes=jp.Styles.input_classes, placeholder='Input 4', a=wp, blur=my_blur)
+
+    # Set focus on third Input element
+    in3.set_focus = True
+
+    return wp
+
+jp.justpy(focus_test)
+
+</code></pre>
+<h4 id="children">children</h4>
+<ul>
+<li>Type: <code>list</code></li>
+<li>Default: <code>[]</code></li>
+</ul>
+<p>When an element is created, can be used to create its children also. Useful if you like defining elements in a hierarchical way.</p>
+<p>New in version 0.10</p>
+<pre><code class="language-python">import justpy as jp
+
+def children_test():
+    wp = jp.WebPage()
+    div_classes = 'm-2 p-2 bg-blue-500 text-white text-lg'
+    span_classes = 'm-2 p-2 bg-blue-500 text-yellow-700 text-xl'
+    jp.Div(children=[jp.Div(classes=div_classes, children=
+                            [jp.Span(text='s1', classes=span_classes), jp.Span(text='s2', classes=span_classes)])
+        ,jp.Div(text='d2', classes=div_classes), jp.Div(text='d3', classes=div_classes), jp.Div(text='d4', classes=div_classes)], a=wp)
+
+    return wp
+
+jp.justpy(children_test)
+</code></pre>
+<h4 id="animation">animation</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>""</code>  (the empty string)</li>
+</ul>
+<p>Set the animation of the element. Uses <a href="https://daneden.github.io/animate.css/">animate.css</a> </p>
+<p>Control the speed of the animation by adding classes:</p>
+<table>
+<thead>
+<tr>
+<th>Class Name</th>
+<th>Speed Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>slow</code></td>
+<td><code>2s</code></td>
+</tr>
+<tr>
+<td><code>slower</code></td>
+<td><code>3s</code></td>
+</tr>
+<tr>
+<td><code>fast</code></td>
+<td><code>800ms</code></td>
+</tr>
+<tr>
+<td><code>faster</code></td>
+<td><code>500ms</code></td>
+</tr>
+</tbody>
+</table>
+<p>For more information and additional options consult the <a href="https://github.com/daneden/animate.css/blob/master/README.md">animate.css documentation</a></p>
+<pre><code class="language-python">import justpy as jp
+import random
+
+input_classes = &quot;m-2 bg-gray-200 appearance-none border-2 border-gray-200 rounded w-64 py-2 px-4 text-gray-700 focus:outline-none focus:bg-white focus:border-purple-500&quot;
+
+
+def animate(self, msg):
+    self.d.delete_components()  # remove all components from d
+    directions = ['Up', 'Down', 'Left', 'Right']
+    html_entity = False
+    for letter in self.text_to_animate.value:
+        if letter == ' ':
+            letter = '&amp;nbsp;'
+            html_entity = True
+        jp.Div(animation=f'fadeIn{random.choice(directions)}', text=letter, html_entity=html_entity,
+               classes='rounded-full bg-blue-500 text-white text-6xl', a=self.d)
+        html_entity = False
+
+
+def animation_test():
+    wp = jp.WebPage()
+    text_to_animate = jp.Input(a=wp, classes=input_classes, placeholder='Enter text to animate', value='Animation Demo!', input='return True')
+    animate_btn = jp.Button(text='Animate!', click=animate, classes='w-32 m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded', a=wp)
+    animate_btn.text_to_animate= text_to_animate
+    d = jp.Div(classes='flex items-center justify-center', style='height: 500px', a=wp)
+    animate_btn.d = d
+    return wp
+
+jp.justpy(animation_test)
+</code></pre>
+<h4 id="id">id</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: Nothing assigned</li>
+</ul>
+<p>If you need to identify an element use the <code>name</code> attribute (or any other attribute you choose), NOT the <code>id</code> attribute. JustPy assigns a unique id to elements that are associated with events and uses it to identify which event handler to run.</p>
+<p>!!! danger "It is advised not to change an element's <code>id</code> or assign it an id"</p>
+<h4 id="delete_flag">delete_flag</h4>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>True</code></li>
+</ul>
+<p>If set to <code>False</code>, element is not deleted when a page which it is on closes. In addition, non of its child components will be deleted.
+If you create an element that will be used on more than one page, set the value to <code>False</code>.</p>
+<h4 id="event_propagation">event_propagation</h4>
+<ul>
+<li>Type: <code>boolean</code></li>
+<li>Default: <code>True</code></li>
+</ul>
+<p>The current version of JustPy supports only event bubbling. Events originate in the innermost child and bubble up through the parents unless<code>event_propagation</code> is set to <code>False</code>.</p>
+<pre><code class="language-python">import justpy as jp
+
+def event_propagates():
+    wp = jp.WebPage()
+    main_div = jp.Div(classes='flex flex-wrap m-2 p-2 ', a=wp, click='self.text=&quot;main div clicked&quot;')
+    for i in range(1,10):
+        jp.Div(text=f'Div {i}', a=main_div, classes='m-2 p-2 text-xl text-white bg-blue-500', click='self.text=&quot;clicked&quot;')
+    return wp
+
+@jp.SetRoute('/no_propagation')
+def event_does_not_propagate():
+    wp = jp.WebPage()
+    main_div = jp.Div(classes='flex flex-wrap m-2 p-2 ', a=wp, click='self.text=&quot;main div clicked&quot;')
+    for i in range(1,10):
+        jp.Div(text=f'Div {i}', a=main_div, classes='m-2 p-2 text-xl text-white bg-blue-500',
+               event_propagation=False, click='self.text=&quot;clicked&quot;')
+    return wp
+
+jp.justpy(event_propagates)
+</code></pre>
+<h4 id="vue_type">vue_type</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'html_component'</code></li>
+</ul>
+<p>The Vue component to couple with the Python class. Used by the front end of the framework.</p>
+<p>!!! danger "If you change this, the component will not be rendered correctly" </p>
+<p>!!! info "When you develop components that require a Vue component as well, you will need to set this attribute in the Python class"</p>
+<h4 id="html_tag">html_tag</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'div'</code></li>
+</ul>
+<p>The HTML tag that corresponds to the component. If you change it, the component may not render correctly.</p>
+<p>!!! danger "If you change this, the component may not be rendered correctly"</p>
+<h4 id="class_name">class_name</h4>
+<ul>
+<li>Type: <code>string</code></li>
+<li>Default: <code>'Div'</code></li>
+</ul>
+<p>The class (component) name of the element. Should be considered read only</p>
+<h4 id="global-html-attributes">Global HTML attributes</h4>
+<p>Div supports some HTML global attributes. Please review the  <a href="/tutorial/html_components/#common-attributes">Common Attributes</a> section in the Tutorial. </p>
+<h3 id="methods">Methods</h3>
+<p><code>def delete(self)</code><br />
+Remove references to the object from JustPy internal data structures to allow garbage collection.</p>
+<p><code>def on(self, event_type, func)</code><br />
+Bind a function to an event</p>
+<p><code>def remove_event(self, event_type)</code><br />
+Remove an event from the element's allowed events</p>
+<p><code>def has_event_function(self, event_type)</code><br />
+Returns <code>True</code> if the element has the specified event</p>
+<p><code>async def update(self)</code><br />
+Updates just the element, not the whole page. The element is updated on all pages specified in the attribute <code>pages</code>.
+See <a href="/tutorial/pushing_data/#simple-message-board">Simple Message Board</a>  </p>
+<p><code>remove_page_from_pages(self, wp: WebPage)</code><br />
+Remove a page from <code>pages</code></p>
+<p><code>def add_page(self, wp: WebPage)</code> and <code>def add_page_to_pages(self, wp: WebPage)</code><br />
+Add a page to <code>pages</code></p>
+<p><code>def set_model(self, value)</code><br />
+Set the model value</p>
+<p><code>async def run_event_function(self, event_type, event_data)</code><br />
+Run an event function. This method takes two arguments in addition to <code>self</code>. The first is the event type. The second, is the dictionary we want passed as the second positional argument to the event handler. This is what we usually designate as <code>msg</code> in our event handler examples in the tutorial. See example <a href="/tutorial/custom_components/#handling-the-change-event">here</a></p>
+<p><code>@staticmethod def convert_dict_to_object(d)</code><br />
+Takes the dictionary created by <code>convert_object_to_dict</code> and returns an object. Can be used to make independent copies of objects.</p>
+<p><code>def __len__(self)</code><br />
+<code>len(c)</code> returns the number of direct children the element <code>c</code> has</p>
+<p><code>def add_to_page(self, wp: WebPage)</code><br />
+Adds the element to a page</p>
+<p><code>def add_attribute(self, attr, value)</code><br />
+Adds an attribute that will be part of the dictionary created by <code>convert_object_to_dict</code></p>
+<p><code>def add_event(self, event_type)</code> and  <code>def add_allowed_event(self, event_type)</code><br />
+Add an allowed event to the element</p>
+<p><code>def add_scoped_slot(self, slot, c)</code><br />
+Relevant to Quasar and other Vue based frameworks or components.</p>
+<p><code>def to_html(self, indent=0, indent_step=0, format=True)</code><br />
+Returns an HTML representation of the element</p>
+<p><code>def react(self, data)</code><br />
+Executes just before the element is rendered. It is just <code>pass</code> for Div and is meant to be overridden by components that inherit from Div</p>
+<p><code>def convert_object_to_dict(self)</code><br />
+Converts the element to a dictionary in the format the can be sent to the frontend to be rendered.</p>
+<p><code>def add_component(self, child, position=None, slot=None)</code><br />
+Add a component at the specified position.</p>
+<p><code>def delete_components(self)</code><br />
+Use to empty a container element like Div. Does not delete the <code>text</code> attribute</p>
+<p><code>def add(self, *args)</code><br />
+Add all arguments as child elements after the current child elements</p>
+<p><code>def add_first(self, child)</code><br />
+Add a child element before all other child elements</p>
+<p><code>def remove_component(self, component)</code><br />
+Remove a child element</p>
+<p><code>def get_components(self)</code><br />
+Get child elements as a list</p>
+<p><code>def first(self)</code><br />
+Get first child element</p>
+<p><code>def last(self)</code><br />
+Get last child element</p>
+<p><code>def model_update(self)</code><br />
+Override as necessary. See example <a href="/tutorial/model_and_data/#advanced-use-of-the-model-attribute">here</a></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
